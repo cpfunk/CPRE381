@@ -1,0 +1,256 @@
+/home/cpfunk/CPRE381/lab2/rtl/reg.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/reg.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg
+-- Compiling architecture rtl of reg
+-- Loading entity dffg
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/mux2t1_N.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/mux2t1_N.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+-- Loading entity mux2t1
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/decoder_1to32.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/decoder_1to32.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DECODER_1TO32
+-- Compiling architecture rtl of DECODER_1TO32
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/mem.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/mem.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/std_logic_vector_array.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/std_logic_vector_array.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package std_logic_vector_array
+-- Compiling package body std_logic_vector_array
+-- Loading package std_logic_vector_array
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/bus_mux_2to1.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/bus_mux_2to1.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_vector_array
+-- Compiling entity BUS_MUX_2TO1
+-- Compiling architecture structure of BUS_MUX_2TO1
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/mem_tb.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/mem_tb.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package ENV
+-- Loading package std_logic_vector_array
+-- Compiling entity mem_tb
+-- Compiling architecture rtl of mem_tb
+-- Loading entity mem
+-- Loading entity reg_file
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/reg_file.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/reg_file.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_vector_array
+-- Compiling entity reg_file
+-- Compiling architecture rtl of reg_file
+-- Loading package NUMERIC_STD
+-- Loading entity DECODER_1TO32
+-- Loading entity REGS
+** Warning: /home/cpfunk/CPRE381/lab2/rtl/reg_file.vhd(44): (vcom-1049) Actual for generic "NUM_REGS" depends on value of signal "NUM_REGS".
+-- Loading entity BUS_MUX_32TO1
+** Warning: /home/cpfunk/CPRE381/lab2/rtl/reg_file.vhd(26): (vcom-1013) Subtype of "ieee.std_logic_1164.STD_LOGIC_VECTOR" depends on value of signal "NUM_REGS".
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/add_sub_nbit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/add_sub_nbit.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ADD_SUB_NBIT
+-- Compiling architecture structural of ADD_SUB_NBIT
+-- Loading entity ONES_COMP_NBIT
+-- Loading entity ADDER_NBIT
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/dffg.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/dffg.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/ones_comp_nbit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/ones_comp_nbit.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ONES_COMP_NBIT
+-- Compiling architecture structural of ONES_COMP_NBIT
+-- Loading entity invg
+-- Loading entity mux2t1
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/data_path1.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/data_path1.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_vector_array
+-- Compiling entity data_path1
+-- Compiling architecture rtl of data_path1
+-- Loading entity reg_file
+-- Loading package NUMERIC_STD
+-- Loading entity BUS_MUX_2TO1
+-- Loading entity ADD_SUB_NBIT
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/data_path2.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/data_path2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_vector_array
+-- Compiling entity data_path2
+-- Compiling architecture rtl of data_path2
+-- Loading package NUMERIC_STD
+-- Loading entity MEM_CTRL
+-- Loading entity mem
+** Warning: /home/cpfunk/CPRE381/lab2/rtl/data_path2.vhd(70): (vcom-1049) Actual for generic "BYTE_WIDTH" depends on value of signal "BYTE_WIDTH".
+-- Loading entity BUS_MUX_2TO1
+-- Loading entity reg_file
+-- Loading entity SIGN_EXTENDER_12B
+-- Loading entity ADD_SUB_NBIT
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/mux2t1.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/mux2t1.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1
+-- Compiling architecture structural of mux2t1
+-- Loading entity invg
+-- Loading entity andg2
+-- Loading entity org2
+-- Compiling architecture dataflow of mux2t1
+-- Loading entity mux2t1
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/regs.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/regs.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_vector_array
+-- Compiling entity REGS
+-- Compiling architecture rtl of REGS
+-- Loading entity reg
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/org2.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/org2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/xorg2.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/xorg2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/bus_mux_32to1.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/bus_mux_32to1.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_vector_array
+-- Compiling entity BUS_MUX_32TO1
+-- Compiling architecture structure of BUS_MUX_32TO1
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/mem_ctrl.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/mem_ctrl.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MEM_CTRL
+-- Compiling architecture rtl of MEM_CTRL
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/sign_extender_12b.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/sign_extender_12b.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SIGN_EXTENDER_12B
+-- Compiling architecture rtl of SIGN_EXTENDER_12B
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/invg.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/invg.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/andg2.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/andg2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+
+} {} {}} /home/cpfunk/CPRE381/lab2/rtl/adder_nbit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/lab2/rtl/adder_nbit.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ADDER_NBIT
+-- Compiling architecture structural of ADDER_NBIT
+-- Loading entity adder_1bit
+
+} {} {}}
