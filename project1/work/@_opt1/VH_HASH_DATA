@@ -36,12 +36,12 @@
 12 add_sub_nbit
 24
 8 IMM_BITS
+1
+37 /home/jbiced3/cpre3810/Project 1/work
 15
 8 mem_ctrl
 12
 10 DATA_WIDTH
-1
-30 /home/cpfunk/CPRE381/lab2/work
 5
 3 reg
 16

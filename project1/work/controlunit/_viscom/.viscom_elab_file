@@ -1,0 +1,1 @@
+/usr/local/mentor/questasim/linux_x86_64/VisualizerRls/bin/viscom -nolock -quiet -jmem_size 7618992 -reportprogress 300 work.tb_control_unit +acc -o controlunit +__betafsm 
