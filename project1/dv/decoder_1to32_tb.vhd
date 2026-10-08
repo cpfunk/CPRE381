@@ -25,9 +25,21 @@ architecture rtl of DECODER_1TO32_tb is
     signal i_RD         : STD_LOGIC_VECTOR(4 downto 0);
     signal o_D       : STD_LOGIC_VECTOR(BITS-1 downto 0);
 
+
+    component DECODER_1TO32 is
+    generic(
+        BITS : integer := 32
+    );
+    port(
+        i_RD       : in STD_LOGIC_VECTOR(4 downto 0);
+        i_WRITE_EN : in STD_LOGIC;
+        o_D        : out STD_LOGIC_VECTOR(BITS-1 downto 0)
+    );
+    end component;
+
 begin
 
-    DUT0: entity work.DECODER_1TO32
+    DUT0: DECODER_1TO32
      generic map(
         BITS => BITS
     )

@@ -24,9 +24,20 @@ architecture rtl of sign_extender_12b_tb is
     signal i_12BIT  : STD_LOGIC_VECTOR(11 downto 0) := x"000";
     signal o_DATA   : STD_LOGIC_VECTOR(BITS - 1 downto 0) := x"0000_0000";
 
+
+    component SIGN_EXTENDER_12B is
+    generic (BITS : INTEGER := 32);
+
+    port (
+        i_CTRL      : in STD_LOGIC;
+        i_DATA_12B  : in STD_LOGIC_VECTOR(11 downto 0);
+        o_DATA      : out STD_LOGIC_VECTOR(BITS - 1 downto 0)
+    );
+    end component;
+
 begin
 
-    DUT0: entity work.sign_extender_12b
+    DUT0: SIGN_EXTENDER_12B
      generic map(
         BITS => BITS
     )

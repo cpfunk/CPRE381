@@ -23,9 +23,21 @@ architecture structure of BUS_MUX_32TO1_tb is
     signal i_DATA : STD_LOGIC_VECTOR_ARRAY(BITS-1 downto 0)(BITS-1 downto 0);
     signal o_DATA : STD_LOGIC_VECTOR(BITS-1 downto 0);
 
+
+    component BUS_MUX_32TO1 is
+    generic(
+        BITS : integer := 32
+    );
+    port(
+        i_S    : in STD_LOGIC_VECTOR(4 downto 0);
+        i_DATA : in STD_LOGIC_VECTOR_ARRAY(BITS-1 downto 0)(BITS-1 downto 0);
+        o_DATA : out STD_LOGIC_VECTOR(BITS-1 downto 0)
+    );
+    end component;
+
 begin
 
-    BUS_MUX_32TO1_inst: entity work.BUS_MUX_32TO1
+    BUS_MUX_32TO1_inst: BUS_MUX_32TO1
      generic map(
         BITS => BITS
     )

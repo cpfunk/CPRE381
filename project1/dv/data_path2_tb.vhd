@@ -45,9 +45,31 @@ architecture rtl of data_path2_tb is
     signal i_REG_R_ADDR     : STD_LOGIC_VECTOR_ARRAY(1 downto 0)(4 downto 0) := (0 => "00000", 1 => "00000");
     signal s_SIGN_EXT_CTRL  : STD_LOGIC_VECTOR(11 downto 0);
 
+
+    component data_path2 is
+    generic(
+        BITS        : INTEGER := 32;
+        IMM_BITS    : INTEGER := 12;
+        ADDR_WIDTH   : INTEGER := 30
+    );
+    port (
+        i_CLK           : in STD_LOGIC;
+        i_RST           : in STD_LOGIC;
+        i_WE            : in STD_LOGIC;
+        i_ADD_SUB_N     : in STD_LOGIC;
+        i_ALU_SRC       : in STD_LOGIC;
+        i_MEM_WRITE     : in STD_LOGIC;
+        i_MEM_READ      : in STD_LOGIC;
+        i_SIGN_EXT_CTRL : in STD_LOGIC;
+        i_IMM           : in STD_LOGIC_VECTOR(IMM_BITS - 1 downto 0);
+        i_REG_W_ADDR    : in STD_LOGIC_VECTOR(4 downto 0);
+        i_REG_R_ADDR    : in STD_LOGIC_VECTOR_ARRAY(1 downto 0)(4 downto 0)
+    );
+    end component;
+
 begin
 
-    data_path2_inst: entity work.data_path2
+    data_path2_inst: data_path2
      generic map(
         BITS => BITS,
         IMM_BITS => IMM_BITS,

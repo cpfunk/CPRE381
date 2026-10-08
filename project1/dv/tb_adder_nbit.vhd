@@ -20,6 +20,18 @@ architecture mixed of TB_ADDER_NBIT is
     signal clk              : std_logic := '0';
     signal i_c, o_c         : std_logic := '0';
     signal i_a, i_b, o_f    : std_logic_vector(N-1 downto 0);
+
+    component ADDER_NBIT is
+    generic(N : integer := 16);
+    port(
+        I_C     : in STD_LOGIC;
+        I_A     : in STD_LOGIC_VECTOR(N-1 downto 0);
+        I_B     : in STD_LOGIC_VECTOR(N-1 downto 0);
+        O_F     : out STD_LOGIC_VECTOR(N-1 downto 0);
+        O_C     : out STD_LOGIC
+    );
+    end component;
+
 begin
 
     clk0: process
@@ -30,7 +42,7 @@ begin
         wait for clk_phase;
     end process;
 
-    dut0: entity work.ADDER_NBIT
+    dut0: ADDER_NBIT
      generic map(
         N => N
     )

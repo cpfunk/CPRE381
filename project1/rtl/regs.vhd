@@ -16,14 +16,26 @@ entity REGS is
     );
 end REGS;
 
-architecture rtl of REGS is begin
+architecture rtl of REGS is 
+    component reg is
+    generic(BITS : integer := 32);
+    port (
+        i_CLK   : in STD_LOGIC;
+        i_RST   : in STD_LOGIC;
+        i_WE    : in STD_LOGIC;
+        i_DATA  : in STD_LOGIC_VECTOR(BITS-1 downto 0);
+        o_DATA  : out STD_LOGIC_VECTOR(BITS-1 downto 0)
+    );
+    end component;
+
+begin
 
     -- register x0 is hardwired to zero
     o_DATA(0) <= (others => '0');
 
     g_reg_file: for i in 0 to NUM_REGS-2 generate
 
-        reg_i: entity work.reg
+        reg_i: reg
          generic map(
             BITS => BITS
         )

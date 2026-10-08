@@ -20,6 +20,18 @@ architecture mixed of TB_ADD_SUB_NBIT is
     signal clk              : std_logic := '0';
     signal nAdd_Sub, o_c         : std_logic := '0';
     signal i_a, i_b, o_f    : std_logic_vector(N-1 downto 0);
+
+    component ADD_SUB_NBIT is
+    generic(BITS : integer := 32);
+    port(
+        i_ADD_SUB    : in STD_LOGIC;
+        i_A         : in STD_LOGIC_VECTOR(BITS-1 downto 0);
+        i_B         : in STD_LOGIC_VECTOR(BITS-1 downto 0);
+        o_F         : out STD_LOGIC_VECTOR(BITS-1 downto 0);
+        o_C         : out STD_LOGIC
+    );
+    end component;
+
 begin
 
     clk0: process
@@ -31,7 +43,7 @@ begin
     end process;
 
     
-    DUT0: entity work.ADD_SUB_NBIT
+    DUT0: ADD_SUB_NBIT
      generic map(
         BITS => N
     )

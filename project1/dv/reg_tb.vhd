@@ -33,9 +33,21 @@ architecture rtl of regs_tb is
     signal i_DATA : STD_LOGIC_VECTOR(BITS-1 downto 0);
     signal o_DATA : STD_LOGIC_VECTOR(BITS-1 downto 0);
 
+
+    component reg is
+    generic(BITS : integer := 32);
+    port (
+        i_CLK   : in STD_LOGIC;
+        i_RST   : in STD_LOGIC;
+        i_WE    : in STD_LOGIC;
+        i_DATA  : in STD_LOGIC_VECTOR(BITS-1 downto 0);
+        o_DATA  : out STD_LOGIC_VECTOR(BITS-1 downto 0)
+    );
+    end component;
+
 begin
 
-    REGS_inst: entity work.REG
+    REGS_inst: reg
      generic map(
         BITS => BITS
     )

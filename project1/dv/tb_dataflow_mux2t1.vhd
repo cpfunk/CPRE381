@@ -19,6 +19,16 @@ architecture mixed of tb_dataflow_mux2t1 is
     signal i_s, i_d0, i_d1, o_o: std_logic := '0';
     signal i_x : std_logic_vector(2 downto 0) := "000";
 
+
+    component mux2t1 is
+    port(
+        i_S     : in std_logic;
+        i_D0    : in std_logic;
+        i_D1    : in std_logic;
+        o_O     : out std_logic
+    );
+    end component;
+
 begin
 
   clk0: process
@@ -31,7 +41,7 @@ begin
 
   (i_s, i_d0, i_d1) <= i_x;
 
-  dut0: entity work.mux2t1(dataflow)
+  dut0: mux2t1
     port map(
       i_s   => i_s,
       i_d0  => i_d0,

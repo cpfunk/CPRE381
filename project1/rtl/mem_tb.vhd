@@ -65,11 +65,48 @@ architecture rtl of mem_tb is
     constant x21  : STD_LOGIC_VECTOR(4 downto 0) := STD_LOGIC_VECTOR(TO_UNSIGNED(16#15#, 5)); 
     constant x22  : STD_LOGIC_VECTOR(4 downto 0) := STD_LOGIC_VECTOR(TO_UNSIGNED(16#16#, 5)); 
 
+
+    component mem is
+
+    generic 
+    (
+        DATA_WIDTH : natural := 32;
+        ADDR_WIDTH : natural := 10;
+        BYTE_WIDTH : natural := 8
+    );
+
+    port 
+    (
+        clk        : in std_logic;
+        addr            : in std_logic_vector((ADDR_WIDTH-1) downto 0);
+        data            : in std_logic_vector((DATA_WIDTH-1) downto 0);
+        be              : in std_logic_vector (3 downto 0);   -- 4 bytes per word
+        we        : in std_logic := '1';
+        q        : out std_logic_vector((DATA_WIDTH -1) downto 0)
+    );
+
+    end component;
+    component reg_file is
+    generic(
+        BITS        : INTEGER := 32;
+        NUM_REGS    : INTEGER := 32
+    );
+    port (
+        i_CLK   : in STD_LOGIC;
+        i_RST   : in STD_LOGIC;
+        i_WE    : in STD_LOGIC;
+        i_RD    : in STD_LOGIC_VECTOR(4 downto 0);
+        i_RS    : in STD_LOGIC_VECTOR_ARRAY(1 downto 0)(4 downto 0);
+        i_DATA  : in STD_LOGIC_VECTOR(BITS-1 downto 0);
+        o_DATA  : out STD_LOGIC_VECTOR_ARRAY(1 downto 0)(BITS-1 downto 0)
+    );
+    end component;
+
 begin
 
     -- DUTs
 
-    dut: entity work.mem
+    dut: mem
      generic map(
         DATA_WIDTH => DATA_WIDTH,
         ADDR_WIDTH => ADDR_WIDTH,
@@ -85,7 +122,7 @@ begin
     );
 
     -- instantiate reg to hold temporary value
-    reg_file_inst: entity work.reg_file
+    reg_file_inst: reg_file
      generic map(
         BITS => DATA_WIDTH
     )
@@ -93,8 +130,8 @@ begin
         i_RST => REGFILE_RST,
         i_CLK => clk,
         i_WE => REGFILE_WE,
-        i_W_ADDR => REGFILE_W_ADDR,
-        i_R_ADDR => (0 => REGFILE_R_ADDR, 1 => ((others => '0') )),
+        i_RD => REGFILE_W_ADDR,
+        i_RS => (0 => REGFILE_R_ADDR, 1 => ((others => '0') )),
         i_DATA => q,
         o_DATA => REGFILE_O_DATA
     );

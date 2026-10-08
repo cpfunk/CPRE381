@@ -58,11 +58,28 @@ architecture rtl of data_path1_tb is
     constant x21  : STD_LOGIC_VECTOR(4 downto 0) := STD_LOGIC_VECTOR(TO_UNSIGNED(16#15#, 5)); 
     constant x22  : STD_LOGIC_VECTOR(4 downto 0) := STD_LOGIC_VECTOR(TO_UNSIGNED(16#16#, 5)); 
 
+
+    component data_path1 is
+    generic(
+        BITS : INTEGER := 32
+    );
+    port (
+        i_CLK       : in STD_LOGIC;
+        i_RST       : in STD_LOGIC;
+        i_WE        : in STD_LOGIC;
+        i_ADD_SUB_N : in STD_LOGIC;
+        i_ALU_SRC   : in STD_LOGIC;
+        i_IMM       : in STD_LOGIC_VECTOR(BITS - 1 downto 0);
+        i_RD        : in STD_LOGIC_VECTOR(4 downto 0);
+        i_RS        : in STD_LOGIC_VECTOR_ARRAY(1 downto 0)(4 downto 0)
+    );
+    end component;
+
 begin
 
     -- DUTs
 
-    data_path1_inst: entity work.data_path1
+    data_path1_inst: data_path1
      generic map(
         BITS => BITS
     )

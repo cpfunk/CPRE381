@@ -16,13 +16,24 @@ architecture structural of ADDER_NBIT is
 
     signal s_c: STD_LOGIC_VECTOR(N downto 0); 
 
+
+    component adder_1bit is
+  port(
+        i_c     : in STD_LOGIC;
+        i_a     : in STD_LOGIC;
+        i_b     : in STD_LOGIC;
+        o_f     : out STD_LOGIC;
+        o_c     : out STD_LOGIC
+    );
+    end component;
+
 begin
 
     s_c(0) <= I_C;
     
     g_nbit_adder: for i in 0 to N-1 generate
         
-        adder_i: entity work.adder_1bit
+        adder_i: adder_1bit
         port map(
             I_C => s_c(i),
             I_A => I_A(i),
