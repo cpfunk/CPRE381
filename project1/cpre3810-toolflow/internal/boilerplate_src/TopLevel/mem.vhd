@@ -1,6 +1,6 @@
 -- Quartus Prime VHDL Template
 -- Single-port RAM with single read/write address
-
+/*
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
@@ -48,3 +48,4 @@ begin
 	q <= ram(to_integer(unsigned(addr)));
 
 end rtl;
+*/
