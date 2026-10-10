@@ -1,0 +1,407 @@
+{/home/jbiced3/cpre3810/Project 1/rtl/regs.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/regs.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_vector_array
+-- Compiling entity REGS
+-- Compiling architecture rtl of REGS
+-- Loading entity reg
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/mux2t1.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/mux2t1.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1
+-- Compiling architecture structural of mux2t1
+-- Loading entity invg
+-- Loading entity andg2
+-- Loading entity org2
+-- Compiling architecture dataflow of mux2t1
+-- Loading entity mux2t1
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/xorg2.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/xorg2.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/org2.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/org2.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/tb_add_sub_nbit.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/tb_add_sub_nbit.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity TB_ADD_SUB_NBIT
+-- Compiling architecture mixed of TB_ADD_SUB_NBIT
+-- Loading entity ADD_SUB_NBIT
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/sign_extender_12b.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/sign_extender_12b.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity SIGN_EXTENDER_12B
+-- Compiling architecture rtl of SIGN_EXTENDER_12B
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/mem_ctrl.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/mem_ctrl.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity MEM_CTRL
+-- Compiling architecture rtl of MEM_CTRL
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/bus_mux_32to1.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/bus_mux_32to1.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_vector_array
+-- Compiling entity BUS_MUX_32TO1
+-- Compiling architecture structure of BUS_MUX_32TO1
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/tb_dffg.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/tb_dffg.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_dffg
+-- Compiling architecture behavior of tb_dffg
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/adder_nbit.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/adder_nbit.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ADDER_NBIT
+-- Compiling architecture structural of ADDER_NBIT
+-- Loading entity adder_1bit
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/andg2.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/andg2.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/invg.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/invg.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/tb_control_unit.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/tb_control_unit.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity tb_control_unit
+-- Compiling architecture mixed of tb_control_unit
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/data_path2_tb.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/data_path2_tb.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package ENV
+-- Loading package std_logic_vector_array
+-- Compiling entity data_path2_tb
+-- Compiling architecture rtl of data_path2_tb
+-- Loading entity data_path2
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/tb_structural_mux2t1.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/tb_structural_mux2t1.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb_structural_mux2t1
+-- Compiling architecture mixed of tb_structural_mux2t1
+-- Loading entity mux2t1
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/reg.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/reg.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity reg
+-- Compiling architecture rtl of reg
+-- Loading entity dffg
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/mux2t1_N.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/mux2t1_N.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+-- Loading entity mux2t1
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/decoder_1to32.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/decoder_1to32.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity DECODER_1TO32
+-- Compiling architecture rtl of DECODER_1TO32
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/mem.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/mem.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/tb_ones_comp.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/tb_ones_comp.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb_ones_comp
+-- Compiling architecture mixed of tb_ones_comp
+-- Loading entity ONES_COMP_NBIT
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/std_logic_vector_array.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/std_logic_vector_array.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling package std_logic_vector_array
+-- Compiling package body std_logic_vector_array
+-- Loading package std_logic_vector_array
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/bus_mux_2to1.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/bus_mux_2to1.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_vector_array
+-- Compiling entity BUS_MUX_2TO1
+-- Compiling architecture structure of BUS_MUX_2TO1
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/tb_adder_nbit.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/tb_adder_nbit.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity TB_ADDER_NBIT
+-- Compiling architecture mixed of TB_ADDER_NBIT
+-- Loading entity ADDER_NBIT
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/reg_file_tb.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/reg_file_tb.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package ENV
+-- Loading package std_logic_vector_array
+-- Compiling entity reg_file_tb
+-- Compiling architecture rtl of reg_file_tb
+-- Loading entity reg_file
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/reg_tb.vhd} {2 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/reg_tb.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package ENV
+-- Loading package std_logic_vector_array
+-- Compiling entity regs_tb
+-- Compiling architecture rtl of regs_tb
+-- Loading entity reg
+** Warning: /home/jbiced3/cpre3810/Project 1/dv/reg_tb.vhd(95): (vcom-135) Based literal has negative value.
+** Warning: /home/jbiced3/cpre3810/Project 1/dv/reg_tb.vhd(97): (vcom-135) Based literal has negative value.
+** Warning: /home/jbiced3/cpre3810/Project 1/dv/reg_tb.vhd(98): (vcom-135) Based literal has negative value.
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/decoder_1to32_tb.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/decoder_1to32_tb.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package ENV
+-- Loading package std_logic_vector_array
+-- Compiling entity DECODER_1TO32_tb
+-- Compiling architecture rtl of DECODER_1TO32_tb
+-- Loading entity DECODER_1TO32
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/data_path1_tb.vhd} {2 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/data_path1_tb.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package ENV
+-- Loading package std_logic_vector_array
+-- Compiling entity data_path1_tb
+-- Compiling architecture rtl of data_path1_tb
+-- Loading entity data_path1
+** Warning: /home/jbiced3/cpre3810/Project 1/dv/data_path1_tb.vhd(201): (vcom-135) Based literal has negative value.
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/mem_tb.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/mem_tb.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package ENV
+-- Loading package std_logic_vector_array
+-- Compiling entity mem_tb
+-- Compiling architecture rtl of mem_tb
+-- Loading entity mem
+-- Loading entity reg_file
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/reg_file.vhd} {2 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/reg_file.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_vector_array
+-- Compiling entity reg_file
+-- Compiling architecture rtl of reg_file
+-- Loading package NUMERIC_STD
+-- Loading entity DECODER_1TO32
+-- Loading entity REGS
+** Warning: /home/jbiced3/cpre3810/Project 1/rtl/reg_file.vhd(44): (vcom-1049) Actual for generic "NUM_REGS" depends on value of signal "NUM_REGS".
+-- Loading entity BUS_MUX_32TO1
+** Warning: /home/jbiced3/cpre3810/Project 1/rtl/reg_file.vhd(26): (vcom-1013) Subtype of "ieee.std_logic_1164.STD_LOGIC_VECTOR" depends on value of signal "NUM_REGS".
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/add_sub_nbit.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/add_sub_nbit.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ADD_SUB_NBIT
+-- Compiling architecture structural of ADD_SUB_NBIT
+-- Loading entity ONES_COMP_NBIT
+-- Loading entity ADDER_NBIT
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/tb_dataflow_mux2t1.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/tb_dataflow_mux2t1.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_textio
+-- Loading package ENV
+-- Compiling entity tb_dataflow_mux2t1
+-- Compiling architecture mixed of tb_dataflow_mux2t1
+-- Loading entity mux2t1
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/ones_comp_nbit.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/ones_comp_nbit.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ONES_COMP_NBIT
+-- Compiling architecture structural of ONES_COMP_NBIT
+-- Loading entity invg
+-- Loading entity mux2t1
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/adder_1bit.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/adder_1bit.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder_1bit
+-- Compiling architecture structural of adder_1bit
+-- Loading entity andg2
+-- Loading entity org2
+-- Loading entity invg
+-- Loading entity xorg2
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/data_path1.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/data_path1.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_vector_array
+-- Compiling entity data_path1
+-- Compiling architecture rtl of data_path1
+-- Loading entity reg_file
+-- Loading package NUMERIC_STD
+-- Loading entity BUS_MUX_2TO1
+-- Loading entity ADD_SUB_NBIT
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/dffg.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/dffg.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/sign_extender_12b_tb.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/sign_extender_12b_tb.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package ENV
+-- Compiling entity sign_extender_12b_tb
+-- Compiling architecture rtl of sign_extender_12b_tb
+-- Loading entity SIGN_EXTENDER_12B
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/dv/bus_mux_32to1_tb.vhd} {1 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/dv/bus_mux_32to1_tb.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package std_logic_vector_array
+-- Loading package ENV
+-- Compiling entity BUS_MUX_32TO1_tb
+-- Compiling architecture structure of BUS_MUX_32TO1_tb
+-- Loading entity BUS_MUX_32TO1
+
+} {} {}} {/home/jbiced3/cpre3810/Project 1/rtl/data_path2.vhd} {2 {vcom -work work -2008 -explicit -vopt -stats=none {/home/jbiced3/cpre3810/Project 1/rtl/data_path2.vhd}
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package std_logic_vector_array
+-- Compiling entity data_path2
+-- Compiling architecture rtl of data_path2
+-- Loading package NUMERIC_STD
+-- Loading entity MEM_CTRL
+-- Loading entity mem
+** Warning: /home/jbiced3/cpre3810/Project 1/rtl/data_path2.vhd(70): (vcom-1049) Actual for generic "BYTE_WIDTH" depends on value of signal "BYTE_WIDTH".
+-- Loading entity BUS_MUX_2TO1
+-- Loading entity reg_file
+-- Loading entity SIGN_EXTENDER_12B
+-- Loading entity ADD_SUB_NBIT
+
+} {} {}}
