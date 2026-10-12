@@ -2,7 +2,6 @@ library IEEE;
 use IEEE.std_logic_1164.all;
 
 use work.std_logic_vector_array.all;
-use work.CLOG2.all;
 
 entity reg_file is
     generic(
@@ -28,19 +27,23 @@ architecture rtl of reg_file is
 
     component BUS_MUX_NTO1 is
     generic(
-        BITS: INTEGER   := 32;
-        N: INTEGER      := 32
+        BITS :      INTEGER := 32;
+        LOG2_BITS : INTEGER := 5;
+        N :         INTEGER := 32
     );
     port(
-        i_S: in STD_LOGIC_VECTOR(CLOG2(N)-1 downto 0);
+        i_S: in STD_LOGIC_VECTOR(LOG2_BITS-1 downto 0);
         i_DATA: in STD_LOGIC_VECTOR_ARRAY(N - 1 downto 0)(BITS - 1 downto 0);
         o_DATA: out STD_LOGIC_VECTOR(BITS - 1 downto 0)
     );
     end component;
     component DECODER_1TON is
-    generic(N : INTEGER := 32);
+    generic(
+        N :         INTEGER := 32;
+        LOG2_N :    INTEGER := 5
+    );
     port(
-        i_SEL   : in STD_LOGIC_VECTOR(CLOG2(N) - 1 downto 0);
+        i_SEL   : in STD_LOGIC_VECTOR(LOG2_N - 1 downto 0);
         i_EN    : in STD_LOGIC;
         o_D     : out STD_LOGIC_VECTOR(N - 1 downto 0)
     );

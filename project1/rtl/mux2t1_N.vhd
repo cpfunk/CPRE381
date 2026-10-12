@@ -40,12 +40,12 @@ architecture structural of mux2t1_N is
 begin
 
   -- Instantiate N mux instances.
-  G_NBit_MUX: for i in 0 to N-1 generate
+  G_32BIT_MUX: for i in 0 to N-1 generate
     MUXI: mux2t1 port map(
               i_S      => i_S,      -- All instances share the same select input.
               i_D0     => i_D0(i),  -- ith instance's data 0 input hooked up to ith data 0 input.
               i_D1     => i_D1(i),  -- ith instance's data 1 input hooked up to ith data 1 input.
               o_O      => o_O(i));  -- ith instance's data output hooked up to ith data output.
-  end generate G_NBit_MUX;
+  end generate G_32BIT_MUX;
   
 end structural;

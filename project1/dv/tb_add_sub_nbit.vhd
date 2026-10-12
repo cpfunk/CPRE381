@@ -6,14 +6,14 @@ library std;
 use std.env.all;              
 use std.textio.all;           
 
-entity TB_ADD_SUB_NBIT is
+entity TB_ADD_SUB_32BIT is
     generic(
         clk_phase   : time := 10 ns;
         N           : integer := 32
     );
-end TB_ADD_SUB_NBIT;
+end TB_ADD_SUB_32BIT;
 
-architecture mixed of TB_ADD_SUB_NBIT is
+architecture mixed of TB_ADD_SUB_32BIT is
 
     constant clk_period  : time := clk_phase * 2;
 
@@ -21,7 +21,7 @@ architecture mixed of TB_ADD_SUB_NBIT is
     signal nAdd_Sub, o_c         : std_logic := '0';
     signal i_a, i_b, o_f    : std_logic_vector(N-1 downto 0);
 
-    component ADD_SUB_NBIT is
+    component ADD_SUB_32BIT is
     generic(BITS : integer := 32);
     port(
         i_ADD_SUB    : in STD_LOGIC;
@@ -43,7 +43,7 @@ begin
     end process;
 
     
-    DUT0: ADD_SUB_NBIT
+    DUT0: ADD_SUB_32BIT
      generic map(
         BITS => N
     )

@@ -46,7 +46,7 @@ architecture rtl of data_path2 is
     signal s_SIGN_EXT_DATA : STD_LOGIC_VECTOR(BITS-1 downto 0);
 
 
-    component ADD_SUB_NBIT is
+    component ADD_SUB_32BIT is
     generic(BITS : integer := 32);
     port(
         i_ADD_SUB    : in STD_LOGIC;
@@ -58,11 +58,12 @@ architecture rtl of data_path2 is
     end component;
     component BUS_MUX_NTO1 is
     generic(
-        BITS: INTEGER   := 32;
-        N: INTEGER      := 32
+        BITS : INTEGER      := 32;
+        LOG2_BITS : INTEGER := 5;
+        N : INTEGER         := 32
     );
     port(
-        i_S: in STD_LOGIC_VECTOR(CLOG2(N)-1 downto 0);
+        i_S: in STD_LOGIC_VECTOR(LOG2_BITS-1 downto 0);
         i_DATA: in STD_LOGIC_VECTOR_ARRAY(N - 1 downto 0)(BITS - 1 downto 0);
         o_DATA: out STD_LOGIC_VECTOR(BITS - 1 downto 0)
     );
@@ -171,7 +172,7 @@ begin
         o_DATA => s_REG_I_DATA
     );
 
-    REG_FILE: reg_file
+    REG_FILE0: reg_file
      generic map(
         BITS => BITS
     )
@@ -195,7 +196,7 @@ begin
         o_DATA => s_SIGN_EXT_DATA
     );
 
-    IMM_SEL_BUS_MUX: BUS_MUX_NTO1
+    IMM_SEL_BUS_MUX0: BUS_MUX_NTO1
      generic map(
         BITS => BITS,
         N => 2
@@ -206,7 +207,7 @@ begin
         o_DATA => s_MUX_OUT
     );
 
-    ADD_SUB_NBIT_inst: ADD_SUB_NBIT
+    ADD_SUB_32BIT_0: ADD_SUB_32BIT
      generic map(
         BITS => BITS
     )

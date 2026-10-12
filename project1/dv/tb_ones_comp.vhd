@@ -21,7 +21,7 @@ architecture mixed of tb_ones_comp is
     signal i_s : std_logic := '0';
     signal i_x, o_f     : std_logic_vector(N-1 downto 0);
 
-    component ONES_COMP_NBIT is
+    component ONES_COMP_32BIT is
     generic(N : integer := 16);
     port(
         i_s : in std_logic;
@@ -41,7 +41,7 @@ begin
         wait for clk_phase;
     end process;
 
-    dut0: ONES_COMP_NBIT
+    dut0: ONES_COMP_32BIT
         generic map(N => N)
         port map(
             i_s => i_s,

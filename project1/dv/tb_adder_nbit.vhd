@@ -6,14 +6,14 @@ library std;
 use std.env.all;              
 use std.textio.all;           
 
-entity TB_ADDER_NBIT is
+entity TB_ADDER_32BIT is
     generic(
         clk_phase   : time      := 10 ns;
         N           : integer   := 32
     );
-end TB_ADDER_NBIT;
+end TB_ADDER_32BIT;
 
-architecture mixed of TB_ADDER_NBIT is
+architecture mixed of TB_ADDER_32BIT is
 
     constant clk_period  : time := clk_phase * 2;
 
@@ -21,14 +21,14 @@ architecture mixed of TB_ADDER_NBIT is
     signal i_c, o_c         : std_logic := '0';
     signal i_a, i_b, o_f    : std_logic_vector(N-1 downto 0);
 
-    component ADDER_NBIT is
-    generic(N : integer := 16);
+    component ADDER_32BIT is
+    generic (BITS: INTEGER := 32);
     port(
-        I_C     : in STD_LOGIC;
-        I_A     : in STD_LOGIC_VECTOR(N-1 downto 0);
-        I_B     : in STD_LOGIC_VECTOR(N-1 downto 0);
-        O_F     : out STD_LOGIC_VECTOR(N-1 downto 0);
-        O_C     : out STD_LOGIC
+        i_C     : in STD_LOGIC;
+        i_A     : in STD_LOGIC_VECTOR(BITS-1 downto 0);
+        i_B     : in STD_LOGIC_VECTOR(BITS-1 downto 0);
+        o_F     : out STD_LOGIC_VECTOR(BITS-1 downto 0);
+        o_C     : out STD_LOGIC
     );
     end component;
 
@@ -42,10 +42,7 @@ begin
         wait for clk_phase;
     end process;
 
-    dut0: ADDER_NBIT
-     generic map(
-        N => N
-    )
+    dut0: ADDER_32BIT
      port map(
         I_C => i_c,
         I_A => i_a,

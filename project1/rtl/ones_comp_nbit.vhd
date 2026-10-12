@@ -1,19 +1,18 @@
 library IEEE;
 use IEEE.std_logic_1164.all;
 
-entity ONES_COMP_NBIT is
-    generic(N : integer := 16);
+entity ONES_COMP_32BIT is
+    generic(BITS : integer := 32);
     port(
         i_s : in std_logic;
-        i_x : in std_logic_vector(N-1 downto 0);
-        o_f : out std_logic_vector(N-1 downto 0)
+        i_x : in std_logic_vector(BITS-1 downto 0);
+        o_f : out std_logic_vector(BITS-1 downto 0)
     );
+end ONES_COMP_32BIT;
 
-end ONES_COMP_NBIT;
+architecture structural of ONES_COMP_32BIT is
 
-architecture structural of ONES_COMP_NBIT is
-
-    signal sig : std_logic_vector(N-1 downto 0);
+    signal sig : std_logic_vector(BITS-1 downto 0);
 
 
     component invg is
@@ -34,7 +33,7 @@ architecture structural of ONES_COMP_NBIT is
 begin
 
   -- Instantiate N mux instances and N inverter instances.
-  g_nbit_ones_comp: for i in 0 to N-1 generate
+  g_32BIT_ones_comp: for i in 0 to BITS-1 generate
     
     inv_i: invg port map(
         i_A     => i_x(i),
@@ -48,6 +47,6 @@ begin
         o_O      => o_f(i)
     );
 
-  end generate g_nbit_ones_comp;
+  end generate g_32BIT_ones_comp;
   
 end structural;
