@@ -1,0 +1,34 @@
+# //  Questa Sim-64
+# //  Version 2026.2 linux_x86_64 May 18 2026
+# //
+# // Unpublished work. Copyright 2026 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/IDECODE/i_opcode
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/IMM_CTRL_inst/o_DATA
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/REG_FILE_inst/BUS_MUX1/o_DATA
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/REG_FILE_inst/s_WE
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/u_subword_write/i_write
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/u_subword_write/i_data
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/u_subword_write/i_sw
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/REG_FILE_inst/i_WE
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/REG_FILE_inst/i_RS(0)
+add wave -position insertpoint  \
+vsim:/tb/MyRiscv/s_DMemWr
