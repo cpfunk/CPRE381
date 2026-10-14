@@ -70,19 +70,19 @@ architecture structure of RISCV_Processor is
     end component;
 
   component reg_file is
-        generic(
-            DATA_WIDTH        : INTEGER := 32;
-            NUM_REGS    : INTEGER := 32
-        );
-        port (
-            i_CLK   : in STD_LOGIC;
-            i_RST   : in STD_LOGIC;
-            i_WE    : in STD_LOGIC;
-            i_RD    : in STD_LOGIC_VECTOR(4 downto 0);
-            i_RS    : in STD_LOGIC_VECTOR_ARRAY(1 downto 0)(4 downto 0);
-            i_DATA  : in STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
-            o_DATA  : out STD_LOGIC_VECTOR_ARRAY(1 downto 0)(DATA_WIDTH-1 downto 0)
-        );
+    generic(
+        DATA_WIDTH        : INTEGER := 32;
+        NUM_REGS    : INTEGER := 32
+    );
+    port (
+        i_CLK   : in STD_LOGIC;
+        i_RST   : in STD_LOGIC;
+        i_WE    : in STD_LOGIC;
+        i_RD    : in STD_LOGIC_VECTOR(4 downto 0);
+        i_RS    : in STD_LOGIC_VECTOR_ARRAY(1 downto 0)(4 downto 0);
+        i_DATA  : in STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
+        o_DATA  : out STD_LOGIC_VECTOR_ARRAY(1 downto 0)(DATA_WIDTH-1 downto 0)
+    );
     end component;
 
   component control_unit is

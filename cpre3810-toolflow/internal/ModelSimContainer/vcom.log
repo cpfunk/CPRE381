@@ -1,7 +1,6 @@
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-Start time: 23:17:11 on Oct 13,2026
-vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/subword_read.vhd proj/src/reg.vhd proj/src/andg2.vhd proj/src/dmem_system.vhd proj/src/ones_comp_nbit.vhd proj/src/control_unit.vhd proj/src/reg_file.vhd proj/src/and_32bit.vhd proj/src/shift_32bit.vhd proj/src/shift_right_fixed.vhd proj/src/adder_32bit.vhd proj/src/dffg.vhd proj/src/org2.vhd proj/src/mux2t1.vhd proj/src/imm_ctrl.vhd proj/src/alu_32bit.vhd proj/src/RISCV_types.vhd proj/src/flip_32bit.vhd proj/src/bus_mux_Nto1.vhd proj/src/xor_32bit.vhd proj/src/invg.vhd proj/src/adder_1bit.vhd proj/src/mux2t1_N.vhd proj/src/pc.vhd proj/src/or_32bit.vhd proj/src/add_sub_32bit.vhd proj/src/xorg2.vhd proj/src/subword_write.vhd proj/src/decoder_1toN.vhd proj/src/regs.vhd proj/src/std_logic_vector_array.vhd proj/src/TopLevel/RISCV_Processor.vhd proj/src/TopLevel/mem.vhd 
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+Start time: 14:36:35 on Oct 14,2026
+vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/subword_write.vhd proj/src/RISCV_types.vhd proj/src/ones_comp_nbit.vhd proj/src/subword_read.vhd proj/src/andg2.vhd proj/src/reg_file.vhd proj/src/control_unit.vhd proj/src/add_sub_32bit.vhd proj/src/regs.vhd proj/src/invg.vhd proj/src/and_32bit.vhd proj/src/xor_32bit.vhd proj/src/dmem_system.vhd proj/src/imm_ctrl.vhd proj/src/mux2t1_N.vhd proj/src/alu_32bit.vhd proj/src/bus_mux_Nto1.vhd proj/src/dffg.vhd proj/src/org2.vhd proj/src/shift_right_fixed.vhd proj/src/flip_32bit.vhd proj/src/reg.vhd proj/src/shift_32bit.vhd proj/src/or_32bit.vhd proj/src/pc.vhd proj/src/decoder_1toN.vhd proj/src/adder_1bit.vhd proj/src/xorg2.vhd proj/src/mux2t1.vhd proj/src/adder_32bit.vhd proj/src/std_logic_vector_array.vhd proj/src/TopLevel/mem.vhd proj/src/TopLevel/RISCV_Processor.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -12,83 +11,82 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd intern
 -- Loading package ENV
 -- Compiling entity tb
 -- Compiling architecture mixed of tb
--- Compiling entity subword_read
--- Compiling architecture dataflow of subword_read
--- Compiling entity reg
--- Compiling architecture rtl of reg
--- Compiling entity andg2
--- Compiling architecture dataflow of andg2
--- Loading package NUMERIC_STD
--- Compiling entity dmem_subsystem
--- Compiling architecture structural of dmem_subsystem
--- Compiling entity ONES_COMP_32BIT
--- Compiling architecture structural of ONES_COMP_32BIT
--- Compiling entity control_unit
--- Compiling architecture dataflow of control_unit
--- Loading package RISCV_types
--- Compiling entity reg_file
--- Compiling architecture rtl of reg_file
--- Compiling entity AND_32BIT
--- Compiling architecture rtl of AND_32BIT
--- Loading package MATH_REAL
--- Compiling entity SHIFT_32BIT
--- Compiling architecture rtl of SHIFT_32BIT
--- Compiling entity SHIFT_RIGHT_FIXED
--- Compiling architecture rtl of SHIFT_RIGHT_FIXED
--- Compiling entity ADDER_32BIT
--- Compiling architecture structural of ADDER_32BIT
--- Compiling entity dffg
--- Compiling architecture mixed of dffg
--- Compiling entity org2
--- Compiling architecture dataflow of org2
--- Compiling entity mux2t1
--- Compiling architecture structural of mux2t1
--- Compiling architecture dataflow of mux2t1
--- Loading entity mux2t1
--- Compiling entity IMM_CTRL
--- Compiling architecture rtl of IMM_CTRL
--- Compiling entity ALU_32BIT
--- Compiling architecture rtl of ALU_32BIT
-** Warning: proj/src/alu_32bit.vhd(207): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
-** Warning: proj/src/alu_32bit.vhd(210): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+-- Compiling entity subword_write
+-- Compiling architecture dataflow of subword_write
 ** Warning: proj/src/RISCV_types.vhd(15): (vcom-1615) Existing package 'RISCV_types' at line 18 will be overwritten.
 -- Compiling package RISCV_types
 ** Warning: proj/src/RISCV_types.vhd(32): (vcom-1615) Existing package body 'RISCV_types(body)' at line 32 will be overwritten.
 -- Compiling package body RISCV_types
 -- Loading package RISCV_types
--- Compiling entity FLIP_32BIT
--- Compiling architecture rtl of FLIP_32BIT
+-- Compiling entity ONES_COMP_32BIT
+-- Compiling architecture structural of ONES_COMP_32BIT
+-- Compiling entity subword_read
+-- Compiling architecture dataflow of subword_read
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
 -- Loading package RISCV_types
--- Compiling entity BUS_MUX_NTO1
--- Compiling architecture structure of BUS_MUX_NTO1
--- Compiling entity XOR_32BIT
--- Compiling architecture rtl of XOR_32BIT
--- Compiling entity invg
--- Compiling architecture dataflow of invg
--- Compiling entity adder_1bit
--- Compiling architecture structural of adder_1bit
--- Compiling entity mux2t1_N
--- Compiling architecture structural of mux2t1_N
--- Compiling entity PC
--- Compiling architecture rtl of PC
--- Compiling entity OR_32BIT
--- Compiling architecture rtl of OR_32BIT
+-- Compiling entity reg_file
+-- Compiling architecture rtl of reg_file
+-- Compiling entity control_unit
+-- Compiling architecture dataflow of control_unit
 -- Compiling entity ADD_SUB_32BIT
 -- Compiling architecture structural of ADD_SUB_32BIT
--- Compiling entity xorg2
--- Compiling architecture dataflow of xorg2
--- Compiling entity subword_write
--- Compiling architecture dataflow of subword_write
--- Compiling entity DECODER_1TON
--- Compiling architecture rtl of DECODER_1TON
 -- Compiling entity REGS
 -- Compiling architecture rtl of REGS
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+-- Compiling entity AND_32BIT
+-- Compiling architecture rtl of AND_32BIT
+-- Compiling entity XOR_32BIT
+-- Compiling architecture rtl of XOR_32BIT
+-- Loading package NUMERIC_STD
+-- Compiling entity dmem_subsystem
+-- Compiling architecture structural of dmem_subsystem
+-- Compiling entity IMM_CTRL
+-- Compiling architecture rtl of IMM_CTRL
+-- Compiling entity mux2t1_N
+-- Compiling architecture structural of mux2t1_N
+-- Compiling entity ALU_32BIT
+-- Compiling architecture rtl of ALU_32BIT
+** Warning: proj/src/alu_32bit.vhd(207): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+** Warning: proj/src/alu_32bit.vhd(210): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+-- Loading package MATH_REAL
+-- Compiling entity BUS_MUX_NTO1
+-- Compiling architecture structure of BUS_MUX_NTO1
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+-- Compiling entity SHIFT_RIGHT_FIXED
+-- Compiling architecture rtl of SHIFT_RIGHT_FIXED
+-- Compiling entity FLIP_32BIT
+-- Compiling architecture rtl of FLIP_32BIT
+-- Compiling entity reg
+-- Compiling architecture rtl of reg
+-- Compiling entity SHIFT_32BIT
+-- Compiling architecture rtl of SHIFT_32BIT
+-- Compiling entity OR_32BIT
+-- Compiling architecture rtl of OR_32BIT
+-- Compiling entity PC
+-- Compiling architecture rtl of PC
+-- Compiling entity DECODER_1TON
+-- Compiling architecture rtl of DECODER_1TON
+-- Compiling entity adder_1bit
+-- Compiling architecture structural of adder_1bit
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
+-- Compiling entity mux2t1
+-- Compiling architecture structural of mux2t1
+-- Compiling architecture dataflow of mux2t1
+-- Loading entity mux2t1
+-- Compiling entity ADDER_32BIT
+-- Compiling architecture structural of ADDER_32BIT
 -- Compiling package std_logic_vector_array
 -- Compiling package body std_logic_vector_array
 -- Loading package std_logic_vector_array
--- Compiling entity RISCV_Processor
--- Compiling architecture structure of RISCV_Processor
 -- Compiling entity mem
 -- Compiling architecture rtl of mem
-vcom: End time: 23:17:11 on Oct 13,2026, Elapsed time: 0:00:00
-Errors: 0, Warnings: 5
+-- Compiling entity RISCV_Processor
+-- Compiling architecture structure of RISCV_Processor
+vcom: End time: 14:36:36 on Oct 14,2026, Elapsed time: 0:00:01
+Errors: 0, Warnings: 4
