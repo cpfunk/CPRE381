@@ -1,0 +1,46 @@
+stages:          # List of stages for jobs, and their order of execution
+  - build
+  - test         # Currently not used
+  - release
+
+variables:
+  GIT_STRATEGY: clone
+  # GIT_SUBMODULE_STRATEGY: recursive
+
+build-job:      
+  stage: build
+  script:
+    - echo "Compiling the jar..."
+    - build_scripts/build-jar.sh
+    - echo "Compile complete."
+  artifacts:
+    paths:
+      - RARS_CPRE3810.jar
+    expire_in: 1 week
+
+test-job:       
+  stage: test
+  script:
+    - echo "Not Implemented"
+
+release_job:
+  stage: release
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  rules:
+    - if: $CI_COMMIT_TAG                  # Run this job when a tag is created manually
+  script:
+    - echo "Running the release job."
+    - build_scripts/build-jar.sh
+    - build_scripts/canvas_release.sh $canv_token $course_id
+    - echo "Release job complete."
+  artifacts:
+    paths:
+      - RARS_CPRE3810.jar
+  release:
+    name: 'Release $CI_COMMIT_TAG'
+    description: 'Release created using the release-cli.'
+    tag_name: '$CI_COMMIT_TAG'
+    assets:
+      links:
+        - name: 'Rars Jar File'
+          url: 'https://git.ece.iastate.edu/cpre3810course/cpre3810-rars/-/jobs/$CI_JOB_ID/artifacts/raw/RARS_CPRE3810.jar'
