@@ -55,19 +55,19 @@ end entity control_unit;
 architecture dataflow of control_unit is
 
 -- Standard RV32I Opcodes
-  constant OP_R_TYPE       : std_logic_vector(6 downto 0) := "0110011";
-  constant OP_I_ARITH      : std_logic_vector(6 downto 0) := "0010011";
-  constant OP_LOAD         : std_logic_vector(6 downto 0) := "0000011";
-  constant OP_STORE        : std_logic_vector(6 downto 0) := "0100011";
-  constant OP_BRANCH       : std_logic_vector(6 downto 0) := "1100011";
-  constant OP_JAL          : std_logic_vector(6 downto 0) := "1101111";
-  constant OP_JALR         : std_logic_vector(6 downto 0) := "1100111";
-  constant OP_LUI          : std_logic_vector(6 downto 0) := "0110111";
-  constant OP_AUIPC        : std_logic_vector(6 downto 0) := "0010111";
-  constant OP_SYSTEM       : std_logic_vector(6 downto 0) := "1110011";
+  constant OP_R_TYPE        : std_logic_vector(6 downto 0) := "0110011";
+  constant OP_I_ARITH       : std_logic_vector(6 downto 0) := "0010011";
+  constant OP_LOAD          : std_logic_vector(6 downto 0) := "0000011";
+  constant OP_STORE         : std_logic_vector(6 downto 0) := "0100011";
+  constant OP_BRANCH        : std_logic_vector(6 downto 0) := "1100011";
+  constant OP_JAL           : std_logic_vector(6 downto 0) := "1101111";
+  constant OP_JALR          : std_logic_vector(6 downto 0) := "1100111";
+  constant OP_LUI           : std_logic_vector(6 downto 0) := "0110111";
+  constant OP_AUIPC         : std_logic_vector(6 downto 0) := "0010111";
+  constant OP_SYSTEM        : std_logic_vector(6 downto 0) := "1110011";
 
--- wifi funct12  
-  constant FUNCT12_WIFI : std_logic_vector(11 downto 0) := "000100000101";
+ -- wifi funct12  
+  constant FUNCT12_WIFI     : std_logic_vector(11 downto 0) := "000100000101";
 
   -- Internal decode flags
   signal s_sub_sra          : std_logic;
@@ -88,6 +88,7 @@ begin
 
   o_J_REG  <=               '1' when (i_opcode = OP_JALR)   
                                 else '0';
+                                  
   -- CONDITIONAL BRANCHING TYPE MUX
   with i_opcode & i_funct3 select? -- the ? is used for "optional" bits (i.e., "---")
     o_PC_ADD_IMM <=         '1'   when OP_JAL     & "---", -- jal
