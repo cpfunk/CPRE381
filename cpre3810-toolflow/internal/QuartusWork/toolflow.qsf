@@ -1,0 +1,49 @@
+
+#
+# CprE 381 Generated Quartus Settings File
+#
+
+set_global_assignment -name FAMILY "Cyclone IV E"
+set_global_assignment -name DEVICE EP4CE115F29C7
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 21.1.1
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "19:07:08  JANUARY 28, 2019"
+set_global_assignment -name LAST_QUARTUS_VERSION "21.1.1 Standard Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_global_assignment -name TOP_LEVEL_ENTITY RISCV_Processor
+set_global_assignment -name VHDL_INPUT_VERSION VHDL_2008
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/TopLevel/mem.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/add_sub_32bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_1bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_32bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/andg2.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/control_unit.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/decoder_1toN.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dffg.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dmem_system.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/flip_32bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/invg.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1_N.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/ones_comp_nbit.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/org2.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/pc.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_read.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_write.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd"
+set_global_assignment -name VHDL_FILE "/home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xorg2.vhd"

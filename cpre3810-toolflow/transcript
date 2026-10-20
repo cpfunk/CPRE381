@@ -12,23 +12,109 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/IDECODE/i_opcode
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/IMM_CTRL_inst/o_DATA
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/REG_FILE_inst/BUS_MUX1/o_DATA
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/REG_FILE_inst/s_WE
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/u_subword_write/i_write
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/u_subword_write/i_data
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/u_subword_write/i_sw
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/REG_FILE_inst/i_WE
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/REG_FILE_inst/i_RS(0)
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/s_DMemWr
+# Loading project test
+# Compile of add_sub_32bit.vhd was successful.
+# Compile of adder_1bit.vhd was successful.
+# Compile of adder_32bit.vhd was successful.
+# Compile of alu_32bit.vhd failed with 3 errors.
+# Compile of and_32bit.vhd failed with 3 errors.
+# Compile of andg2.vhd was successful.
+# Compile of bus_mux_Nto1.vhd failed with 3 errors.
+# Compile of control_unit.vhd failed with 8 errors.
+# Compile of decoder_1toN.vhd was successful.
+# Compile of dffg.vhd was successful.
+# Compile of dmem_system.vhd was successful.
+# Compile of flip_32bit.vhd was successful.
+# Compile of imm_ctrl.vhd failed with 3 errors.
+# Compile of invg.vhd was successful.
+# Compile of mux2t1.vhd was successful.
+# Compile of mux2t1_N.vhd was successful.
+# Compile of ones_comp_nbit.vhd was successful.
+# Compile of or_32bit.vhd failed with 3 errors.
+# Compile of org2.vhd was successful.
+# Compile of pc.vhd failed with 1 errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_file.vhd failed with 3 errors.
+# Compile of regs.vhd failed with 3 errors.
+# Compile of RISCV_types.vhd failed with 1 errors.
+# Compile of shift_32bit.vhd failed with 3 errors.
+# Compile of shift_right_fixed.vhd failed with 3 errors.
+# Compile of std_logic_vector_array.vhd failed with 1 errors.
+# Compile of subword_read.vhd was successful.
+# Compile of subword_write.vhd was successful.
+# Compile of xor_32bit.vhd failed with 3 errors.
+# Compile of xorg2.vhd was successful.
+# Compile of mem.vhd was successful.
+# Compile of RISCV_Processor.vhd failed with 3 errors.
+# 33 compiles, 15 failed with 44 errors.
+# Compile of add_sub_32bit.vhd was successful.
+# Compile of adder_1bit.vhd was successful.
+# Compile of adder_32bit.vhd was successful.
+# Compile of alu_32bit.vhd failed with 3 errors.
+# Compile of and_32bit.vhd failed with 3 errors.
+# Compile of andg2.vhd was successful.
+# Compile of bus_mux_Nto1.vhd failed with 3 errors.
+# Compile of control_unit.vhd failed with 8 errors.
+# Compile of decoder_1toN.vhd was successful.
+# Compile of dffg.vhd was successful.
+# Compile of dmem_system.vhd was successful.
+# Compile of flip_32bit.vhd was successful.
+# Compile of imm_ctrl.vhd failed with 3 errors.
+# Compile of invg.vhd was successful.
+# Compile of mux2t1.vhd was successful.
+# Compile of mux2t1_N.vhd was successful.
+# Compile of ones_comp_nbit.vhd was successful.
+# Compile of or_32bit.vhd failed with 3 errors.
+# Compile of org2.vhd was successful.
+# Compile of pc.vhd failed with 1 errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_file.vhd failed with 3 errors.
+# Compile of regs.vhd failed with 3 errors.
+# Compile of RISCV_types.vhd failed with 1 errors.
+# Compile of shift_32bit.vhd failed with 3 errors.
+# Compile of shift_right_fixed.vhd failed with 3 errors.
+# Compile of std_logic_vector_array.vhd failed with 1 errors.
+# Compile of subword_read.vhd was successful.
+# Compile of subword_write.vhd was successful.
+# Compile of xor_32bit.vhd failed with 3 errors.
+# Compile of xorg2.vhd was successful.
+# Compile of mem.vhd was successful.
+# Compile of RISCV_Processor.vhd failed with 3 errors.
+# 33 compiles, 15 failed with 44 errors.
+# Compile of add_sub_32bit.vhd was successful.
+# Compile of adder_1bit.vhd was successful.
+# Compile of adder_32bit.vhd was successful.
+# Compile of alu_32bit.vhd failed with 3 errors.
+# Compile of and_32bit.vhd failed with 3 errors.
+# Compile of andg2.vhd was successful.
+# Compile of bus_mux_Nto1.vhd failed with 3 errors.
+# Compile of control_unit.vhd failed with 8 errors.
+# Compile of decoder_1toN.vhd was successful.
+# Compile of dffg.vhd was successful.
+# Compile of dmem_system.vhd was successful.
+# Compile of flip_32bit.vhd was successful.
+# Compile of imm_ctrl.vhd failed with 3 errors.
+# Compile of invg.vhd was successful.
+# Compile of mux2t1.vhd was successful.
+# Compile of mux2t1_N.vhd was successful.
+# Compile of ones_comp_nbit.vhd was successful.
+# Compile of or_32bit.vhd failed with 3 errors.
+# Compile of org2.vhd was successful.
+# Compile of pc.vhd failed with 1 errors.
+# Compile of reg.vhd was successful.
+# Compile of reg_file.vhd failed with 3 errors.
+# Compile of regs.vhd failed with 3 errors.
+# Compile of RISCV_types.vhd failed with 1 errors.
+# Compile of shift_32bit.vhd failed with 3 errors.
+# Compile of shift_right_fixed.vhd failed with 3 errors.
+# Compile of std_logic_vector_array.vhd failed with 1 errors.
+# Compile of subword_read.vhd was successful.
+# Compile of subword_write.vhd was successful.
+# Compile of xor_32bit.vhd failed with 3 errors.
+# Compile of xorg2.vhd was successful.
+# Compile of mem.vhd was successful.
+# Compile of RISCV_Processor.vhd failed with 3 errors.
+# Compile of alu_tb.vhd failed with 3 errors.
+# Compile of tb_control_unit.vhd was successful.
+# Compile of tb_dmem_system.vhd was successful.
+# 36 compiles, 16 failed with 47 errors.
