@@ -1,0 +1,13 @@
+.data
+.byte 0x15, 0xA8, 0x73, 0x1F, 0x27, 0x7F, 0x80, 0xC2, 0x34, 0x35, 0x92
+
+.text
+.globl main
+
+main:
+	#start test
+	lui x1, 0x10010    # set base address
+	addi x1, x1, 4     
+	
+	lb   x29, 1(x1)    	# tests largest positive number
+wfi
