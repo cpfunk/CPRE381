@@ -47,7 +47,8 @@ begin
     s_I_IMM         <= i_DATA(31 downto 20);
     s_S_IMM         <= i_DATA(31 downto 25) & i_DATA(11 downto 7);
     s_SB_IMM        <= i_DATA(31) & i_DATA(7) & i_DATA(30 downto 25) & i_DATA(11 downto 8) & '0';
-    s_U_IMM         <= (31 downto 12 => i_DATA(31 downto 12), others => '0');
+    s_U_IMM(31 downto 12) <= i_DATA(31 downto 12);
+    s_U_IMM(11 downto 0)  <= (others => '0');
     s_UJ_IMM        <= i_DATA(31) & i_DATA(19 downto 12) & i_DATA(20) & i_DATA(30 downto 21) & '0';
     
     -- build sign extensions

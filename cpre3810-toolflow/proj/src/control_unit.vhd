@@ -90,15 +90,14 @@ begin
                                 else '0';
                                   
   -- CONDITIONAL BRANCHING TYPE MUX
-  with i_opcode & i_funct3 select? -- the ? is used for "optional" bits (i.e., "---")
-    o_PC_ADD_IMM <=         '1'   when OP_JAL     & "---", -- jal
-                            s_EQ  when OP_BRANCH  & "000", -- beq
-                            s_NE  when OP_BRANCH  & "001", -- bne
-                            i_LT  when OP_BRANCH  & "100", -- blt
-                            s_GE  when OP_BRANCH  & "101", -- bge
-                            i_LTU when OP_BRANCH  & "110", -- bltu
-                            s_GEU when OP_BRANCH  & "111", -- bgeu
-                            '0'   when others;
+  o_PC_ADD_IMM <=           '1'   when (i_opcode = OP_JAL) else
+                            s_EQ  when (i_opcode = OP_BRANCH and i_funct3 = "000") else
+                            s_NE  when (i_opcode = OP_BRANCH and i_funct3 = "001") else
+                            i_LT  when (i_opcode = OP_BRANCH and i_funct3 = "100") else
+                            s_GE  when (i_opcode = OP_BRANCH and i_funct3 = "101") else
+                            i_LTU when (i_opcode = OP_BRANCH and i_funct3 = "110") else
+                            s_GEU when (i_opcode = OP_BRANCH and i_funct3 = "111") else
+                            '0';
 
  -- ALU OPERAND SOURCE MUX
   -- 1 = PC (AUIPC only) 
@@ -194,7 +193,7 @@ begin
   with i_opcode select
     o_ALU_CTRL <=           s_sub_sra & i_funct3 when OP_R_TYPE,
                             s_sub_sra & i_funct3 when OP_I_ARITH,
-                            '0'       & i_funct3 when OP_BRANCH,   
+                            "1000"               when OP_BRANCH,   
                             "0000"               when others;     
 
 

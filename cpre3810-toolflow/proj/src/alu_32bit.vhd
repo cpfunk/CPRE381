@@ -188,8 +188,7 @@ begin
     s_LTU <= not s_C;
 
     -- equality comparison
-    s_EQ <= nor s_ADD_SUB;
-
+    s_EQ <= '1' when (s_ADD_SUB = x"00000000") else '0';
     -------------------------------
     --  FLAG OUTPUT ASSIGNMENTS  --
     -------------------------------
