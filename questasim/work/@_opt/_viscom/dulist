@@ -22,5 +22,5 @@
 2 11 shift_32bit 3 rtl 35 /home/cpfunk/CPRE381/questasim/work 1 65 0 0 154 0
 2 8 or_32bit 3 rtl 35 /home/cpfunk/CPRE381/questasim/work 1 65 0 0 80 0
 2 9 and_32bit 3 rtl 35 /home/cpfunk/CPRE381/questasim/work 1 65 0 0 80 0
-2 9 alu_32bit 3 rtl 35 /home/cpfunk/CPRE381/questasim/work 1 65 0 0 385 0
-1 12 alu_32bit_tb 3 rtl 35 /home/cpfunk/CPRE381/questasim/work 1 65 1024 0 1323 0
+1 9 alu_32bit 3 rtl 35 /home/cpfunk/CPRE381/questasim/work 1 65 0 0 389 0
+2 12 alu_32bit_tb 3 rtl 35 /home/cpfunk/CPRE381/questasim/work 1 65 1024 0 1323 0

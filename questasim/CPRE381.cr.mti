@@ -1,6 +1,5 @@
-/home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/add_sub_32bit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/add_sub_32bit.vhd
+/home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/add_sub_32bit.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/add_sub_32bit.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -9,37 +8,33 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 
 } {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/alu_32bit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/alu_32bit.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Loading package RISCV_types
 -- Compiling entity ALU_32BIT
 -- Compiling architecture rtl of ALU_32BIT
-** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/alu_32bit.vhd(207): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
-** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/alu_32bit.vhd(210): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/alu_32bit.vhd(206): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/alu_32bit.vhd(209): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/reg.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/reg.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/reg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/reg.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity reg
 -- Compiling architecture rtl of reg
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/mux2t1_N.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/mux2t1_N.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/mux2t1_N.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/mux2t1_N.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity mux2t1_N
 -- Compiling architecture structural of mux2t1_N
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/and_32bit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/and_32bit.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/and_32bit.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/and_32bit.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -47,9 +42,8 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling entity AND_32BIT
 -- Compiling architecture rtl of AND_32BIT
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/imm_ctrl.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/imm_ctrl.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/imm_ctrl.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/imm_ctrl.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -57,9 +51,8 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling entity IMM_CTRL
 -- Compiling architecture rtl of IMM_CTRL
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/decoder_1toN.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/decoder_1toN.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/decoder_1toN.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/decoder_1toN.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -68,18 +61,16 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling entity DECODER_1TON
 -- Compiling architecture rtl of DECODER_1TON
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/subword_write.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/subword_write.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/subword_write.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/subword_write.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity subword_write
 -- Compiling architecture dataflow of subword_write
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -87,9 +78,28 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling package body std_logic_vector_array
 -- Loading package std_logic_vector_array
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/pc.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/pc.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/test/alu_32bit_tb.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/test/alu_32bit_tb.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Loading package MATH_REAL
+-- Loading package std_logic_vector_array
+-- Loading package ENV
+-- Compiling entity ALU_32BIT_tb
+-- Compiling architecture rtl of ALU_32BIT_tb
+** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/test/alu_32bit_tb.vhd(327): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/test/alu_32bit_tb.vhd(351): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/test/alu_32bit_tb.vhd(375): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/test/alu_32bit_tb.vhd(376): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/test/alu_32bit_tb.vhd(399): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/test/alu_32bit_tb.vhd(400): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/test/alu_32bit_tb.vhd(423): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+** Warning: /home/cpfunk/CPRE381/cpre3810-toolflow/proj/test/alu_32bit_tb.vhd(424): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/pc.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/pc.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -97,18 +107,16 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling entity PC
 -- Compiling architecture rtl of PC
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/adder_32bit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/adder_32bit.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/adder_32bit.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/adder_32bit.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
 -- Compiling entity ADDER_32BIT
 -- Compiling architecture structural of ADDER_32BIT
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/reg_file.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/reg_file.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/reg_file.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/reg_file.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -116,9 +124,8 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling entity reg_file
 -- Compiling architecture rtl of reg_file
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/flip_32bit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/flip_32bit.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/flip_32bit.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/flip_32bit.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -126,36 +133,8 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling entity FLIP_32BIT
 -- Compiling architecture rtl of FLIP_32BIT
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/ones_comp_nbit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/ones_comp_nbit.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/dmem_system.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/dmem_system.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity ONES_COMP_32BIT
--- Compiling architecture structural of ONES_COMP_32BIT
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/adder_1bit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/adder_1bit.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity adder_1bit
--- Compiling architecture structural of adder_1bit
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/dffg.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/dffg.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity dffg
--- Compiling architecture mixed of dffg
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/dmem_system.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/dmem_system.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -163,9 +142,40 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling entity dmem_subsystem
 -- Compiling architecture structural of dmem_subsystem
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/dffg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/dffg.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity dffg
+-- Compiling architecture mixed of dffg
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/adder_1bit.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/adder_1bit.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity adder_1bit
+-- Compiling architecture structural of adder_1bit
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/ones_comp_nbit.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/ones_comp_nbit.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity ONES_COMP_32BIT
+-- Compiling architecture structural of ONES_COMP_32BIT
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/control_unit.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/control_unit.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity control_unit
+-- Compiling architecture dataflow of control_unit
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -173,58 +183,8 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling entity RISCV_Processor
 -- Compiling architecture structure of RISCV_Processor
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/control_unit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/control_unit.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/mux2t1.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/mux2t1.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity control_unit
--- Compiling architecture dataflow of control_unit
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/TopLevel/mem.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/TopLevel/mem.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Compiling entity mem
--- Compiling architecture rtl of mem
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/subword_read.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/subword_read.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity subword_read
--- Compiling architecture dataflow of subword_read
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/shift_32bit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/shift_32bit.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package MATH_REAL
--- Loading package RISCV_types
--- Compiling entity SHIFT_32BIT
--- Compiling architecture rtl of SHIFT_32BIT
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/regs.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/regs.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package RISCV_types
--- Compiling entity REGS
--- Compiling architecture rtl of REGS
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/mux2t1.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/mux2t1.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -233,18 +193,52 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling architecture dataflow of mux2t1
 -- Loading entity mux2t1
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/xorg2.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/xorg2.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/regs.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/regs.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity xorg2
--- Compiling architecture dataflow of xorg2
+-- Loading package RISCV_types
+-- Compiling entity REGS
+-- Compiling architecture rtl of REGS
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/shift_right_fixed.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/shift_right_fixed.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/shift_32bit.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/shift_32bit.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package MATH_REAL
+-- Loading package RISCV_types
+-- Compiling entity SHIFT_32BIT
+-- Compiling architecture rtl of SHIFT_32BIT
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/subword_read.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/subword_read.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity subword_read
+-- Compiling architecture dataflow of subword_read
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/TopLevel/mem.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/TopLevel/mem.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package NUMERIC_STD
+-- Compiling entity mem
+-- Compiling architecture rtl of mem
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/org2.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/org2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity org2
+-- Compiling architecture dataflow of org2
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/shift_right_fixed.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/shift_right_fixed.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -252,18 +246,16 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling entity SHIFT_RIGHT_FIXED
 -- Compiling architecture rtl of SHIFT_RIGHT_FIXED
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/org2.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/org2.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/xorg2.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/xorg2.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
--- Compiling entity org2
--- Compiling architecture dataflow of org2
+-- Compiling entity xorg2
+-- Compiling architecture dataflow of xorg2
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/RISCV_types.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/RISCV_types.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/RISCV_types.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/RISCV_types.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -271,47 +263,8 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling package body RISCV_types
 -- Loading package RISCV_types
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/xor_32bit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/xor_32bit.vhd
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package RISCV_types
--- Compiling entity XOR_32BIT
--- Compiling architecture rtl of XOR_32BIT
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/or_32bit.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/or_32bit.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package RISCV_types
--- Compiling entity OR_32BIT
--- Compiling architecture rtl of OR_32BIT
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/invg.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/invg.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity invg
--- Compiling architecture dataflow of invg
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/andg2.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/andg2.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Compiling entity andg2
--- Compiling architecture dataflow of andg2
-
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
 -- Loading package STANDARD
 -- Loading package TEXTIO
 -- Loading package std_logic_1164
@@ -320,5 +273,39 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Loading package RISCV_types
 -- Compiling entity BUS_MUX_NTO1
 -- Compiling architecture structure of BUS_MUX_NTO1
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/andg2.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/andg2.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity andg2
+-- Compiling architecture dataflow of andg2
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/invg.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/invg.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Compiling entity invg
+-- Compiling architecture dataflow of invg
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/or_32bit.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/or_32bit.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package RISCV_types
+-- Compiling entity OR_32BIT
+-- Compiling architecture rtl of OR_32BIT
+
+} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/xor_32bit.vhd {1 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/xor_32bit.vhd
+QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+-- Loading package STANDARD
+-- Loading package TEXTIO
+-- Loading package std_logic_1164
+-- Loading package RISCV_types
+-- Compiling entity XOR_32BIT
+-- Compiling architecture rtl of XOR_32BIT
 
 } {} {}}
