@@ -1,0 +1,1197 @@
+# //  Questa Sim-64
+# //  Version 2026.2 linux_x86_64 May 18 2026
+# //
+# // Unpublished work. Copyright 2026 Siemens
+# //
+# // This material contains trade secrets or otherwise confidential information
+# // owned by Siemens Industry Software Inc. or its affiliates (collectively,
+# // "SISW"), or its licensors. Access to and use of this information is strictly
+# // limited as set forth in the Customer's applicable agreements with SISW.
+# //
+# // This material may not be copied, distributed, or otherwise disclosed outside
+# // of the Customer's facilities without the express written permission of SISW,
+# // and may not be used in any way not expressly authorized by SISW.
+# //
+vlib work
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/test/tb_control_unit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:28:56 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/test/tb_control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_control_unit
+# -- Compiling architecture mixed of tb_control_unit
+# vcom: End time: 20:28:56 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/test/tb_control_unit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:01 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/test/tb_control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity tb_control_unit
+# -- Compiling architecture mixed of tb_control_unit
+# vcom: End time: 20:29:01 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/control_unit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:14 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control_unit
+# -- Compiling architecture dataflow of control_unit
+# vcom: End time: 20:29:14 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/decoder_1toN.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:14 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/decoder_1toN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity DECODER_1TON
+# -- Compiling architecture rtl of DECODER_1TON
+# vcom: End time: 20:29:14 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dffg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:14 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# vcom: End time: 20:29:14 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dmem_system.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:14 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dmem_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dmem_subsystem
+# -- Compiling architecture structural of dmem_subsystem
+# vcom: End time: 20:29:14 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/flip_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:14 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/flip_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Compiling entity FLIP_32BIT
+# -- Compiling architecture rtl of FLIP_32BIT
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1
+# -- Compiling architecture structural of mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# -- Loading entity mux2t1
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/ones_comp_nbit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/ones_comp_nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ONES_COMP_32BIT
+# -- Compiling architecture structural of ONES_COMP_32BIT
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/pc.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PC
+# -- Compiling architecture rtl of PC
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/pc.vhd(45): (vcom-1436) Actual expression (prefix expression) of formal "i_WE" is not globally static.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/pc.vhd(52): VHDL Compiler exiting
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture rtl of reg
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd(3): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd(3): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd(5): VHDL Compiler exiting
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package RISCV_types
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd(21): Element subtype (ieee.std_logic_1164.STD_LOGIC_VECTOR) of array type cannot be unconstrained array type.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd(30): VHDL Compiler exiting
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd(5): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd(5): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd(7): VHDL Compiler exiting
+# vcom: End time: 20:29:15 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:15 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd(8): VHDL Compiler exiting
+# vcom: End time: 20:29:16 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:16 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_vector_array
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd(5): Element subtype (ieee.std_logic_1164.STD_LOGIC_VECTOR) of array type cannot be unconstrained array type.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:16 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_read.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:16 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_read.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity subword_read
+# -- Compiling architecture dataflow of subword_read
+# vcom: End time: 20:29:16 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_write.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:16 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_write.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity subword_write
+# -- Compiling architecture dataflow of subword_write
+# vcom: End time: 20:29:16 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:16 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:16 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:16 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 20:29:16 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/add_sub_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:18 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/add_sub_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADD_SUB_32BIT
+# -- Compiling architecture structural of ADD_SUB_32BIT
+# vcom: End time: 20:29:18 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_1bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:18 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_1bit
+# -- Compiling architecture structural of adder_1bit
+# vcom: End time: 20:29:18 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:18 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADDER_32BIT
+# -- Compiling architecture structural of ADDER_32BIT
+# vcom: End time: 20:29:18 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:18 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:18 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:19 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:19 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:19 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 20:29:19 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:19 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd(6): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd(6): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd(8): VHDL Compiler exiting
+# vcom: End time: 20:29:19 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/add_sub_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:30 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/add_sub_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADD_SUB_32BIT
+# -- Compiling architecture structural of ADD_SUB_32BIT
+# vcom: End time: 20:29:30 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_1bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:30 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_1bit
+# -- Compiling architecture structural of adder_1bit
+# vcom: End time: 20:29:30 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:30 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADDER_32BIT
+# -- Compiling architecture structural of ADDER_32BIT
+# vcom: End time: 20:29:30 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:30 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:30 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:30 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:30 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:30 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 20:29:30 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:30 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd(6): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd(6): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd(8): VHDL Compiler exiting
+# vcom: End time: 20:29:30 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/decoder_1toN.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:30 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/decoder_1toN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity DECODER_1TON
+# -- Compiling architecture rtl of DECODER_1TON
+# vcom: End time: 20:29:30 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dffg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:30 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# vcom: End time: 20:29:30 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dmem_system.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:30 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dmem_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dmem_subsystem
+# -- Compiling architecture structural of dmem_subsystem
+# vcom: End time: 20:29:30 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/flip_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:30 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/flip_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Compiling entity FLIP_32BIT
+# -- Compiling architecture rtl of FLIP_32BIT
+# vcom: End time: 20:29:30 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1
+# -- Compiling architecture structural of mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# -- Loading entity mux2t1
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/ones_comp_nbit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/ones_comp_nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ONES_COMP_32BIT
+# -- Compiling architecture structural of ONES_COMP_32BIT
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/pc.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PC
+# -- Compiling architecture rtl of PC
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/pc.vhd(45): (vcom-1436) Actual expression (prefix expression) of formal "i_WE" is not globally static.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/pc.vhd(52): VHDL Compiler exiting
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture rtl of reg
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd(3): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd(3): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd(5): VHDL Compiler exiting
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd(5): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd(5): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd(7): VHDL Compiler exiting
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd(8): VHDL Compiler exiting
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_vector_array
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd(5): Element subtype (ieee.std_logic_1164.STD_LOGIC_VECTOR) of array type cannot be unconstrained array type.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_read.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_read.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity subword_read
+# -- Compiling architecture dataflow of subword_read
+# vcom: End time: 20:29:31 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_write.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:31 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_write.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity subword_write
+# -- Compiling architecture dataflow of subword_write
+# vcom: End time: 20:29:32 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:32 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd(4): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd(4): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd(6): VHDL Compiler exiting
+# vcom: End time: 20:29:32 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:32 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 20:29:32 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:29:33 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package RISCV_types
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd(21): Element subtype (ieee.std_logic_1164.STD_LOGIC_VECTOR) of array type cannot be unconstrained array type.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd(30): VHDL Compiler exiting
+# vcom: End time: 20:29:33 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:30:04 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# ** Error: (vcom-11) Could not find work.riscv_types. Make sure the top design unit is compiled into the correct library or that the correct library is being referenced.
+# ** Error (suppressible): /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd(5): (vcom-1195) Cannot find expanded name "work.RISCV_types".
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd(5): Unknown expanded name.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd(7): VHDL Compiler exiting
+# vcom: End time: 20:30:04 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 3, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:30:05 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package RISCV_types
+# ** Error: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd(21): Element subtype (ieee.std_logic_1164.STD_LOGIC_VECTOR) of array type cannot be unconstrained array type.
+# ** Note: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd(30): VHDL Compiler exiting
+# vcom: End time: 20:30:05 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# Modified questa.ini
+# Modified questa.ini
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:04 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package RISCV_types
+# -- Compiling package body RISCV_types
+# -- Loading package RISCV_types
+# vcom: End time: 20:31:04 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/add_sub_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:16 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/add_sub_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADD_SUB_32BIT
+# -- Compiling architecture structural of ADD_SUB_32BIT
+# vcom: End time: 20:31:16 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_1bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:16 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_1bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity adder_1bit
+# -- Compiling architecture structural of adder_1bit
+# vcom: End time: 20:31:16 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:16 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/adder_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ADDER_32BIT
+# -- Compiling architecture structural of ADDER_32BIT
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package RISCV_types
+# -- Compiling entity ALU_32BIT
+# -- Compiling architecture rtl of ALU_32BIT
+# ** Warning: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd(206): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# ** Warning: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd(209): (vcom-1074) Non-locally static OTHERS choice is allowed only if it is the only choice of the only association.
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 2
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/and_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package RISCV_types
+# -- Compiling entity AND_32BIT
+# -- Compiling architecture rtl of AND_32BIT
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/andg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/andg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity andg2
+# -- Compiling architecture dataflow of andg2
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/bus_mux_Nto1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package RISCV_types
+# -- Compiling entity BUS_MUX_NTO1
+# -- Compiling architecture structure of BUS_MUX_NTO1
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/control_unit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/control_unit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity control_unit
+# -- Compiling architecture dataflow of control_unit
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/decoder_1toN.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/decoder_1toN.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity DECODER_1TON
+# -- Compiling architecture rtl of DECODER_1TON
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dffg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dffg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity dffg
+# -- Compiling architecture mixed of dffg
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dmem_system.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/dmem_system.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity dmem_subsystem
+# -- Compiling architecture structural of dmem_subsystem
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/flip_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/flip_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Compiling entity FLIP_32BIT
+# -- Compiling architecture rtl of FLIP_32BIT
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/imm_ctrl.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package RISCV_types
+# -- Compiling entity IMM_CTRL
+# -- Compiling architecture rtl of IMM_CTRL
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/invg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/invg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity invg
+# -- Compiling architecture dataflow of invg
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1
+# -- Compiling architecture structural of mux2t1
+# -- Compiling architecture dataflow of mux2t1
+# -- Loading entity mux2t1
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1_N.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/mux2t1_N.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity mux2t1_N
+# -- Compiling architecture structural of mux2t1_N
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/ones_comp_nbit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/ones_comp_nbit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ONES_COMP_32BIT
+# -- Compiling architecture structural of ONES_COMP_32BIT
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/or_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package RISCV_types
+# -- Compiling entity OR_32BIT
+# -- Compiling architecture rtl of OR_32BIT
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/org2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/org2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity org2
+# -- Compiling architecture dataflow of org2
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/pc.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:17 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/pc.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity PC
+# -- Compiling architecture rtl of PC
+# vcom: End time: 20:31:17 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:20 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity reg
+# -- Compiling architecture rtl of reg
+# vcom: End time: 20:31:20 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:20 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package RISCV_types
+# -- Compiling entity reg_file
+# -- Compiling architecture rtl of reg_file
+# vcom: End time: 20:31:20 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:20 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/regs.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package RISCV_types
+# -- Compiling entity REGS
+# -- Compiling architecture rtl of REGS
+# vcom: End time: 20:31:20 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:20 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/RISCV_types.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package RISCV_types
+# -- Compiling package body RISCV_types
+# -- Loading package RISCV_types
+# vcom: End time: 20:31:21 on Oct 27,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:21 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package MATH_REAL
+# -- Loading package RISCV_types
+# -- Compiling entity SHIFT_32BIT
+# -- Compiling architecture rtl of SHIFT_32BIT
+# vcom: End time: 20:31:21 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:21 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/shift_right_fixed.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package RISCV_types
+# -- Compiling entity SHIFT_RIGHT_FIXED
+# -- Compiling architecture rtl of SHIFT_RIGHT_FIXED
+# vcom: End time: 20:31:21 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:21 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/std_logic_vector_array.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_vector_array
+# -- Compiling package body std_logic_vector_array
+# -- Loading package std_logic_vector_array
+# vcom: End time: 20:31:21 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_read.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:21 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_read.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity subword_read
+# -- Compiling architecture dataflow of subword_read
+# vcom: End time: 20:31:21 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_write.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:21 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/subword_write.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity subword_write
+# -- Compiling architecture dataflow of subword_write
+# vcom: End time: 20:31:21 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:21 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xor_32bit.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package RISCV_types
+# -- Compiling entity XOR_32BIT
+# -- Compiling architecture rtl of XOR_32BIT
+# vcom: End time: 20:31:21 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xorg2.vhd
+# QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
+# Start time: 20:31:21 on Oct 27,2026
+# vcom -reportprogress 300 -work work /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/xorg2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity xorg2
+# -- Compiling architecture dataflow of xorg2
+# vcom: End time: 20:31:21 on Oct 27,2026, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.tb_control_unit -voptargs=+acc
+# ** Note: (vsim-220) 'questa.ini' is used as the ini file.
+# vsim work.tb_control_unit -voptargs="+acc" 
+# Start time: 20:31:35 on Oct 27,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# ** Warning: (vopt-10587) Some optimizations are turned off because the +acc switch is in effect. This will cause your simulation to run slowly. Please use -access/-debug to maintain needed visibility. The +acc switch would be deprecated in a future release.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.tb_control_unit(mixed)#1
+# Loading work.control_unit(dataflow)#1
+add wave -position insertpoint sim:/tb_control_unit/*
+run 1000
+run 1000
+run 1000
+quit -sim
+# vsim: End time: 20:40:30 on Oct 27,2026, Elapsed time: 0:08:55
+# Errors: 0, Warnings: 1
+add wave -position insertpoint vsim:/tb/*
+quit -sim
+quit -sim
+# Break key hit
+quit -sim
+add wave -position insertpoint vsim2:/tb/*
+quit -sim
+quit -sim

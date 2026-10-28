@@ -90,7 +90,7 @@ bgeu_ok:
     lw    s0, 8(sp)
     lw    ra, 12(sp)
     addi  sp, sp, 16
-    wfi
+    jal   x0, halt
 
 br_fail:
     addi  s0, x0, -1           
@@ -132,3 +132,6 @@ recurse_exit:
     lw    ra, 12(sp)           
     addi  sp, sp, 16           # Deallocate activation record
     jalr  x0, ra, 0            # Return to caller
+	
+halt:
+    wfi
