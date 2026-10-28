@@ -33,13 +33,13 @@ architecture rtl of ALU_32BIT is
 
     constant LOG2_BITS : INTEGER := 5;
     
-    signal s_OF             : STD_LOGIC; -- overflow
-    signal s_C              : STD_LOGIC; -- carry out
-    signal s_NF             : STD_LOGIC; -- negative flag
-    signal s_EQ             : STD_LOGIC; -- equality flag
-    signal s_LT             : STD_LOGIC; -- less than (signed)
-    signal s_LTU            : STD_LOGIC; -- less than (unsigned)
-    signal s_SUB            : STD_LOGIC; -- subtract control
+    signal s_OF         : STD_LOGIC; -- overflow
+    signal s_C          : STD_LOGIC; -- carry out
+    signal s_NF         : STD_LOGIC; -- negative flag
+    signal s_EQ         : STD_LOGIC; -- equality flag
+    signal s_LT         : STD_LOGIC; -- less than (signed)
+    signal s_LTU        : STD_LOGIC; -- less than (unsigned)
+    signal s_SUB        : STD_LOGIC; -- subtract control
 
     signal s_ADD_SUB    : STD_LOGIC_VECTOR(DATA_WIDTH - 1 downto 0);
     signal s_SHIFT      : STD_LOGIC_VECTOR(DATA_WIDTH - 1 downto 0);

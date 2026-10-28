@@ -76,11 +76,11 @@ msort:
     srli t0, t0, 1          # t0 = mid = (left + right) / 2
 
     addi sp, sp, -20
-    sw   ra,  0(sp)     # save return
-    sw   a2,  4(sp)     # save left
-    sw   a3,  8(sp)     # save right
-    sw   t0, 12(sp)     # save mid
-    sw   a1, 16(sp)     # save temp_array
+    sw ra,  0(sp)     # save return
+    sw a2,  4(sp)     # save left
+    sw a3,  8(sp)     # save right
+    sw t0, 12(sp)     # save mid
+    sw a1, 16(sp)     # save temp_array
 
     # msort(array, temp_array, left, mid)
     #    a0,            # array = array 
@@ -180,12 +180,12 @@ merge:
     copy_right:
         blt a4, t1, copy_right_end   # while j <= right
         slli t3, t1, 2
-        add  t3, a0, t3
-        lw   t3, 0(t3)           # t3 = array[j]
+        add t3, a0, t3
+        lw t3, 0(t3)           # t3 = array[j]
 
         slli t4, t2, 2
-        add  t4, a1, t4
-        sw   t3, 0(t4)           # temp_array[k] = array[j]
+        add t4, a1, t4
+        sw t3, 0(t4)           # temp_array[k] = array[j]
 
         addi t1, t1, 1           # j++
         addi t2, t2, 1           # k++
@@ -197,11 +197,11 @@ merge:
         blt a4, t0, merge_ret   # while i <= right
 
         slli t4, t0, 2
-        add  t5, a1, t4
-        lw   t3, 0(t5)           # t3 = temp_array[i]
+        add t5, a1, t4
+        lw t3, 0(t5)           # t3 = temp_array[i]
 
-        add  t4, a0, t4
-        sw   t3, 0(t4)           # array[i] = temp_array[i]
+        add t4, a0, t4
+        sw t3, 0(t4)           # array[i] = temp_array[i]
 
         addi t0, t0, 1           # i++
         j copy_back_loop
