@@ -1,38 +1,37 @@
-# This test is a sequence of small jumps backward
-# and forward to make sure PC can be decremented.
-
 .data
-
 .text
-step1:
-addi t1, t1, 1
-jal ra, step2
-# This shouldn't run
-addi t0, t0, 1
-
-step3:
-addi t1, t1, 1
-jal ra, step4
-# This shouldn't run
-addi t0, t0, 1
-
-step2:
-addi t1, t1, 1
-jal ra, step3
-# This shouldn't run
-addi t0, t0, 1
-
 .globl main
 
-main:
-# Zeroing registers
-addi t0, zero, 0
-addi t1, zero, 0
-jal ra, step1
-# This shouldn't run
-addi t0, t0, 1
+#--------------------------------------
+# This is a basic test of the jal instruction,
+# consisting of several backward jump
+# instructions (to check to see if we can
+# do negative offsets).
+#--------------------------------------
 
-step4:
-addi t1, t1, 1
-# t1 should be 4, t0 should be 0 by end
+main:
+    jal x1, location1
+    jal x0, failure
+
+location4:
+    jal x5, end
+    jal x0, failure
+
+location3:
+    jal x4, location4
+    jal x0, failure 
+
+location2:
+    jal x3, location3
+    jal x0, failure
+
+location1:
+    jal x2, location2
+    jal x0, failure
+
+failure:
+    jal x0, failure
+
+end:
+
 wfi

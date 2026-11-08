@@ -1,0 +1,1433 @@
+Using VDI Python Environment
+Testing
+Setting SALT_LICENSE_SERVER to 1717@io.ece.iastate.edu:
+Setting INTEL_LICENSE_FILE to 27008@io.ece.iastate.edu:
+
+** Warning: It looks like src/tb.vhd has been modified. It will be graded using the version from the release **
+
+ ** Expected: {b'U\xdf~3\xf9\xe1\xedb\x1a\xb7MEX\xe0MO'} **
+
+ ** Observed: b'\x01^\xa2R\x1c\xb3L\xc1}X9(P\x84V\x9e' **
+All VHDL src files compiled successfully
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/add_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 25
+Processor Cycles: 25
+CPI:   1.0
+Results in: output/add_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/add_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 20
+Processor Cycles: 20
+CPI:   1.0
+Results in: output/add_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/add_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 32
+Processor Cycles: 32
+CPI:   1.0
+Results in: output/add_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/add_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/add_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/add_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 10
+Processor Cycles: 10
+CPI:   1.0
+Results in: output/add_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/addi_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 21
+Processor Cycles: 21
+CPI:   1.0
+Results in: output/addi_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/addi_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 20
+Processor Cycles: 20
+CPI:   1.0
+Results in: output/addi_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/addi_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 23
+Processor Cycles: 23
+CPI:   1.0
+Results in: output/addi_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/addi_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/addi_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/addi_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 74
+Processor Cycles: 74
+CPI:   1.0
+Results in: output/addi_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/and_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 17
+Processor Cycles: 17
+CPI:   1.0
+Results in: output/and_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/and_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 36
+Processor Cycles: 36
+CPI:   1.0
+Results in: output/and_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/and_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 24
+Processor Cycles: 24
+CPI:   1.0
+Results in: output/and_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/and_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 7
+Processor Cycles: 7
+CPI:   1.0
+Results in: output/and_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/and_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 10
+Processor Cycles: 10
+CPI:   1.0
+Results in: output/and_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/andi_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 5
+Processor Cycles: 5
+CPI:   1.0
+Results in: output/andi_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/andi_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 9
+Processor Cycles: 9
+CPI:   1.0
+Results in: output/andi_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/andi_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 20
+Processor Cycles: 20
+CPI:   1.0
+Results in: output/andi_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/andi_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 22
+Processor Cycles: 22
+CPI:   1.0
+Results in: output/andi_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/auipc_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 32
+Processor Cycles: 32
+CPI:   1.0
+Results in: output/auipc_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/auipc_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/auipc_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/auipc_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 7
+Processor Cycles: 7
+CPI:   1.0
+Results in: output/auipc_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/beq_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 16
+Processor Cycles: 16
+CPI:   1.0
+Results in: output/beq_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/beq_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 23
+Processor Cycles: 23
+CPI:   1.0
+Results in: output/beq_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/beq_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 19
+Processor Cycles: 19
+CPI:   1.0
+Results in: output/beq_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/beq_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 5
+Processor Cycles: 5
+CPI:   1.0
+Results in: output/beq_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/beq_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 8
+Processor Cycles: 8
+CPI:   1.0
+Results in: output/beq_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bge_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 20
+Processor Cycles: 20
+CPI:   1.0
+Results in: output/bge_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bge_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 28
+Processor Cycles: 28
+CPI:   1.0
+Results in: output/bge_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bge_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 21
+Processor Cycles: 21
+CPI:   1.0
+Results in: output/bge_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bge_4.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 7
+Processor Cycles: 7
+CPI:   1.0
+Results in: output/bge_4.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bge_5.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/bge_5.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bgeu_1.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 7
+Processor Cycles: 7
+CPI:   1.0
+Results in: output/bgeu_1.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bgeu_2.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 7
+Processor Cycles: 7
+CPI:   1.0
+Results in: output/bgeu_2.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bgeu_3.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 8
+Processor Cycles: 8
+CPI:   1.0
+Results in: output/bgeu_3.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bgeu_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 14
+Processor Cycles: 14
+CPI:   1.0
+Results in: output/bgeu_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bgeu_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 15
+Processor Cycles: 15
+CPI:   1.0
+Results in: output/bgeu_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bltu_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/bltu_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bltu_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/bltu_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bltu_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/bltu_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bltu_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/bltu_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bltu_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/bltu_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bne_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/bne_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bne_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 5
+Processor Cycles: 5
+CPI:   1.0
+Results in: output/bne_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bne_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 5
+Processor Cycles: 5
+CPI:   1.0
+Results in: output/bne_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bne_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 13
+Processor Cycles: 13
+CPI:   1.0
+Results in: output/bne_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/bne_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 19
+Processor Cycles: 19
+CPI:   1.0
+Results in: output/bne_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/jal_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/jal_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/jal_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/jal_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/jal_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/jal_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/jal_4.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 3
+Processor Cycles: 3
+CPI:   1.0
+Results in: output/jal_4.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/jal_5.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/jal_5.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/jalr_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 36
+Processor Cycles: 36
+CPI:   1.0
+Results in: output/jalr_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/jalr_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 56
+Processor Cycles: 56
+CPI:   1.0
+Results in: output/jalr_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/jalr_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/jalr_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/jalr_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/jalr_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/jalr_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/jalr_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lb_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/lb_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lb_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/lb_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lb_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/lb_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lb_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/lb_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lb_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/lb_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lbu_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 7
+Processor Cycles: 7
+CPI:   1.0
+Results in: output/lbu_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lbu_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 9
+Processor Cycles: 9
+CPI:   1.0
+Results in: output/lbu_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lbu_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 9
+Processor Cycles: 9
+CPI:   1.0
+Results in: output/lbu_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lbu_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 8
+Processor Cycles: 8
+CPI:   1.0
+Results in: output/lbu_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lh_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 8
+Processor Cycles: 8
+CPI:   1.0
+Results in: output/lh_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lh_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/lh_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lh_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/lh_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lhu_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/lhu_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lhu_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/lhu_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lhu_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 9
+Processor Cycles: 9
+CPI:   1.0
+Results in: output/lhu_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lui_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 18
+Processor Cycles: 18
+CPI:   1.0
+Results in: output/lui_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lui_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 41
+Processor Cycles: 41
+CPI:   1.0
+Results in: output/lui_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lui_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 48
+Processor Cycles: 48
+CPI:   1.0
+Results in: output/lui_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lui_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 10
+Processor Cycles: 10
+CPI:   1.0
+Results in: output/lui_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lui_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 10
+Processor Cycles: 10
+CPI:   1.0
+Results in: output/lui_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lw_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 10
+Processor Cycles: 10
+CPI:   1.0
+Results in: output/lw_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lw_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 12
+Processor Cycles: 12
+CPI:   1.0
+Results in: output/lw_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lw_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 12
+Processor Cycles: 12
+CPI:   1.0
+Results in: output/lw_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lw_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/lw_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/lw_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/lw_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/or_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 12
+Processor Cycles: 12
+CPI:   1.0
+Results in: output/or_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/or_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 12
+Processor Cycles: 12
+CPI:   1.0
+Results in: output/or_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/or_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 10
+Processor Cycles: 10
+CPI:   1.0
+Results in: output/or_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/or_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/or_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/or_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 5
+Processor Cycles: 5
+CPI:   1.0
+Results in: output/or_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/ori_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/ori_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/ori_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 13
+Processor Cycles: 13
+CPI:   1.0
+Results in: output/ori_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/ori_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 13
+Processor Cycles: 13
+CPI:   1.0
+Results in: output/ori_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/ori_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 7
+Processor Cycles: 7
+CPI:   1.0
+Results in: output/ori_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/ori_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 7
+Processor Cycles: 7
+CPI:   1.0
+Results in: output/ori_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sb_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 8
+Processor Cycles: 8
+CPI:   1.0
+Results in: output/sb_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sb_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 9
+Processor Cycles: 9
+CPI:   1.0
+Results in: output/sb_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sb_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 10
+Processor Cycles: 10
+CPI:   1.0
+Results in: output/sb_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sb_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 25
+Processor Cycles: 25
+CPI:   1.0
+Results in: output/sb_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sb_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/sb_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sh_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 5
+Processor Cycles: 5
+CPI:   1.0
+Results in: output/sh_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sh_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 9
+Processor Cycles: 9
+CPI:   1.0
+Results in: output/sh_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sh_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/sh_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sh_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/sh_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sh_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 8
+Processor Cycles: 8
+CPI:   1.0
+Results in: output/sh_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sll_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 36
+Processor Cycles: 36
+CPI:   1.0
+Results in: output/sll_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sll_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/sll_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sll_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/sll_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sll_4.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/sll_4.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sll_5.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 16
+Processor Cycles: 16
+CPI:   1.0
+Results in: output/sll_5.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slli_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 10
+Processor Cycles: 10
+CPI:   1.0
+Results in: output/slli_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slli_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 12
+Processor Cycles: 12
+CPI:   1.0
+Results in: output/slli_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slli_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 12
+Processor Cycles: 12
+CPI:   1.0
+Results in: output/slli_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slli_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 32
+Processor Cycles: 32
+CPI:   1.0
+Results in: output/slli_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slli_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 18
+Processor Cycles: 18
+CPI:   1.0
+Results in: output/slli_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slt_1.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/slt_1.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slt_2.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 10
+Processor Cycles: 10
+CPI:   1.0
+Results in: output/slt_2.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slt_3.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/slt_3.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slt_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/slt_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slt_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/slt_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slti_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 19
+Processor Cycles: 19
+CPI:   1.0
+Results in: output/slti_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slti_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 25
+Processor Cycles: 25
+CPI:   1.0
+Results in: output/slti_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slti_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 23
+Processor Cycles: 23
+CPI:   1.0
+Results in: output/slti_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slti_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 28
+Processor Cycles: 28
+CPI:   1.0
+Results in: output/slti_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/slti_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 31
+Processor Cycles: 31
+CPI:   1.0
+Results in: output/slti_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sltiu_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/sltiu_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sltiu_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/sltiu_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sltiu_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 12
+Processor Cycles: 12
+CPI:   1.0
+Results in: output/sltiu_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sra_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 8
+Processor Cycles: 8
+CPI:   1.0
+Results in: output/sra_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sra_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 9
+Processor Cycles: 9
+CPI:   1.0
+Results in: output/sra_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sra_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 8
+Processor Cycles: 8
+CPI:   1.0
+Results in: output/sra_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sra_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/sra_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sra_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 10
+Processor Cycles: 10
+CPI:   1.0
+Results in: output/sra_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srai_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 13
+Processor Cycles: 13
+CPI:   1.0
+Results in: output/srai_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srai_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 15
+Processor Cycles: 15
+CPI:   1.0
+Results in: output/srai_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srai_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 15
+Processor Cycles: 15
+CPI:   1.0
+Results in: output/srai_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srai_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/srai_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srai_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 13
+Processor Cycles: 13
+CPI:   1.0
+Results in: output/srai_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srl_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 3
+Processor Cycles: 3
+CPI:   1.0
+Results in: output/srl_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srl_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/srl_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srl_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 21
+Processor Cycles: 21
+CPI:   1.0
+Results in: output/srl_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srl_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 19
+Processor Cycles: 19
+CPI:   1.0
+Results in: output/srl_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srl_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 16
+Processor Cycles: 16
+CPI:   1.0
+Results in: output/srl_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srli_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/srli_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srli_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 6
+Processor Cycles: 6
+CPI:   1.0
+Results in: output/srli_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/srli_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 8
+Processor Cycles: 8
+CPI:   1.0
+Results in: output/srli_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sub_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 22
+Processor Cycles: 22
+CPI:   1.0
+Results in: output/sub_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sub_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 22
+Processor Cycles: 22
+CPI:   1.0
+Results in: output/sub_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sub_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 34
+Processor Cycles: 34
+CPI:   1.0
+Results in: output/sub_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sub_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 63
+Processor Cycles: 63
+CPI:   1.0
+Results in: output/sub_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/sub_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 65
+Processor Cycles: 65
+CPI:   1.0
+Results in: output/sub_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/xor_1.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 10
+Processor Cycles: 10
+CPI:   1.0
+Results in: output/xor_1.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/xor_2.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/xor_2.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/xor_3.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 12
+Processor Cycles: 12
+CPI:   1.0
+Results in: output/xor_3.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/xor_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/xor_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/xor_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 4
+Processor Cycles: 4
+CPI:   1.0
+Results in: output/xor_5.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/xori_1.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/xori_1.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/xori_2.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/xori_2.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/xori_3.asm
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 11
+Processor Cycles: 11
+CPI:   1.0
+Results in: output/xori_3.asm
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/xori_4.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 32
+Processor Cycles: 32
+CPI:   1.0
+Results in: output/xori_4.s
+----------------------------------------------
+Testing file: proj/riscv/cpre3810_test_assembly_program_suite/xori_5.s
+Rars simulation: [92mpass[0m
+Modelsim simulation: [92mpass[0m
+Test Result: [92mpass[0m
+Rars Instructions: 46
+Processor Cycles: 46
+CPI:   1.0
+Results in: output/xori_5.s
+----------------------------------------------
