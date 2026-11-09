@@ -333,7 +333,6 @@ begin
   --------------------------
   s_Halt    <= not s_MEM_WB_OUT.CTRL_SIGS.N_HALT;
   s_N_HALT  <= s_MEM_WB_OUT.CTRL_SIGS.N_HALT;
-  s_RegWr   <= s_MEM_WB_OUT.CTRL_SIGS.REG_WE and s_N_HALT;
   oALUOut   <= s_ALU_OUT;
 
 
@@ -455,6 +454,8 @@ begin
 
   s_RegWrAddr <= s_MEM_WB_OUT.RD;
   s_RegWrData <= s_REG_IN_DATA;
+
+  s_RegWr   <= s_MEM_WB_OUT.CTRL_SIGS.REG_WE and s_N_HALT;
 
   REG_FILE_inst: reg_file
     generic map(

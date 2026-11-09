@@ -32,11 +32,21 @@ architecture rtl of CTRL_SIGS_REG is
             o_DATA  : out STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0)
         );
     end component;
+
+    component dffg_rst_hi is
+        port(
+            i_CLK        : in std_logic;     -- Clock input
+            i_RST        : in std_logic;     -- Reset input
+            i_WE         : in std_logic;     -- Write enable input
+            i_D          : in std_logic;     -- Data value input
+            o_Q          : out std_logic
+        );   -- Data value output
+    end component;
     
     signal s_CTRL_SIGS          : CTRL_SIGS;
     signal s_NOP_SIGS           : CTRL_SIGS; 
-    signal s_STD_LOGIC_SIGS_IN  : STD_LOGIC_VECTOR(9 downto 0);
-    signal s_STD_LOGIC_SIGS_OUT : STD_LOGIC_VECTOR(9 downto 0);
+    signal s_STD_LOGIC_SIGS_IN  : STD_LOGIC_VECTOR(8 downto 0);
+    signal s_STD_LOGIC_SIGS_OUT : STD_LOGIC_VECTOR(8 downto 0);
 
 
 begin
@@ -64,21 +74,28 @@ begin
     s_STD_LOGIC_SIGS_IN(6) <= s_CTRL_SIGS.WRD;
     s_STD_LOGIC_SIGS_IN(7) <= s_CTRL_SIGS.HWRD;
     s_STD_LOGIC_SIGS_IN(8) <= s_CTRL_SIGS.UNSIGNED;
-    s_STD_LOGIC_SIGS_IN(9) <= s_CTRL_SIGS.N_HALT;
 
     -- output signals
-    s_STD_LOGIC_SIGS_OUT(1 downto 0) <= o_CTRL_SIGS.ALU_SRC_PC;
-    s_STD_LOGIC_SIGS_OUT(3 downto 2) <= o_CTRL_SIGS.ALU_SRC;
-    s_STD_LOGIC_SIGS_OUT(4) <= o_CTRL_SIGS.REG_WE;
-    s_STD_LOGIC_SIGS_OUT(5) <= o_CTRL_SIGS.MEM_WRITE;
-    s_STD_LOGIC_SIGS_OUT(6) <= o_CTRL_SIGS.WRD;
-    s_STD_LOGIC_SIGS_OUT(7) <= o_CTRL_SIGS.HWRD;
-    s_STD_LOGIC_SIGS_OUT(8) <= o_CTRL_SIGS.UNSIGNED;
-    s_STD_LOGIC_SIGS_OUT(9) <= o_CTRL_SIGS.N_HALT;
+    o_CTRL_SIGS.ALU_SRC_PC  <= s_STD_LOGIC_SIGS_OUT(1 downto 0);
+    o_CTRL_SIGS.ALU_SRC     <= s_STD_LOGIC_SIGS_OUT(3 downto 2);
+    o_CTRL_SIGS.REG_WE      <= s_STD_LOGIC_SIGS_OUT(4);
+    o_CTRL_SIGS.MEM_WRITE   <= s_STD_LOGIC_SIGS_OUT(5);
+    o_CTRL_SIGS.WRD         <= s_STD_LOGIC_SIGS_OUT(6);
+    o_CTRL_SIGS.HWRD        <= s_STD_LOGIC_SIGS_OUT(7);
+    o_CTRL_SIGS.UNSIGNED    <= s_STD_LOGIC_SIGS_OUT(8);
+
+    HALT_N_REG: dffg_rst_hi
+     port map(
+        i_CLK => i_CLK,
+        i_RST => i_RST,
+        i_WE => i_WE,
+        i_D => s_CTRL_SIGS.N_HALT,
+        o_Q => o_CTRL_SIGS.N_HALT
+    );
 
     STD_LOGIC_SIGS: reg
      generic map(
-        DATA_WIDTH => 10
+        DATA_WIDTH => 9
     )
      port map(
         i_CLK => i_CLK,

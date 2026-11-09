@@ -27,10 +27,10 @@ res_idx:
         .word   3
 .text
         # NEW RISCV                # ORIGINAL MIPS
-	# Rearr used lui for 0x10011000 and lasw for pump so address generation has no internal data hazard
+	# Rearr used lui for 0x10011000 and lasw3 for pump so address generation has no internal data hazard
 	lui  sp, 0x10011           # li $sp, 0x10011000
 	li   fp, 0                 # li $fp, 0
-	lasw ra, pump              # la $ra pump
+	lasw3 ra, pump              # la $ra pump
 	j    main
 	nop
 	nop
@@ -56,7 +56,7 @@ main:
 
 main_loop_body:
         lw   t4, 24(fp)            # lw      $4,24($fp)
-        lasw ra,    trucks         # la      $ra, trucks
+        lasw3 ra,    trucks         # la      $ra, trucks
         j    is_visited
         nop
         nop
@@ -76,7 +76,7 @@ trucks:
 
         lw   t4, 24(fp)            # lw      $4,24($fp)
                                    # ; addi    $k0, $k0,1# breakpoint
-        lasw ra,    billowy        # la      $ra, billowy
+        lasw3 ra,    billowy        # la      $ra, billowy
         j    topsort
         nop
         nop
@@ -156,7 +156,7 @@ welcome:
         
 interest:
         lw   t4, 24(fp)            # lw      $4,24($fp)
-        lasw ra,    new            # la      $ra, new
+        lasw3 ra,    new            # la      $ra, new
         j    is_visited
         nop
         nop
@@ -174,7 +174,7 @@ new:
         nop
 
         lw   t4, 24(fp)            # lw      $4,24($fp)
-        lasw ra,    partner        # la      $ra, partner
+        lasw3 ra,    partner        # la      $ra, partner
         j    topsort
         nop
         nop
@@ -184,7 +184,7 @@ tasteful:
         addi t2,    fp, 28         # addiu   $2,$fp,28
         # Rearr computed t4 directly from fp + 28 to avoid 3-cycle RAW dependency on t2
         addi t4,    fp, 28         # move    $4,$2
-        lasw ra,    badge          # la      $ra, badge
+        lasw3 ra,    badge          # la      $ra, badge
         j    next_edge
         nop
         nop
@@ -205,21 +205,21 @@ turkey:
         nop
 telling:
         # NOTE: $v0 === $2
-	lasw t2,    res_idx        # la      $v0, res_idx
+	lasw3 t2,    res_idx        # la      $v0, res_idx
 	nop
 	nop
 	nop
 	lw   t2,  0(t2)            # lw      $v0, 0($v0)
-	# Rearr placed lasw t3, res_idx right after lw t2 so its 4 instructions hide lw t2 latency
-        lasw t3,    res_idx        # la      $3, res_idx
+	# Rearr placed lasw3 t3, res_idx right after lw t2 so its 4 instructions hide lw t2 latency
+        lasw3 t3,    res_idx        # la      $3, res_idx
         addi t4,    t2, -1         # addiu   $4,$2,-1
         slli t3,    t2, 2          # sll     $3,$2,2
-        lasw t2,    res_idx
+        lasw3 t2,    res_idx
         nop
         nop
         nop
         sw   t4,  0(t2)            # sw      $4, 0($3)
-        lasw t4,    res            # la      $4, res
+        lasw3 t4,    res            # la      $4, res
                                    # ; lui     $3,%hi(res_idx)
                                    # ; sw      $4,%lo(res_idx)($3)
                                    # ; lui     $4,%hi(res)
@@ -238,7 +238,7 @@ telling:
         # Rearr expanded neg and li 0xffff without internal hazards, and interleaved lw a0 / mv sp, fp during address addition
         sub  t6,    x0, t6
         
-        lasw t2,    res            # la      $2, res
+        lasw3 t2,    res            # la      $2, res
         lui  a1,    0x10
         nop
         nop
@@ -283,7 +283,7 @@ topsort:
         nop
         sw   t4, 48(fp)            # sw      $4,48($fp)
         lw   t4, 48(fp)            # lw      $4,48($fp)
-        lasw ra,    verse          # la      $ra, verse
+        lasw3 ra,    verse          # la      $ra, verse
         j    mark_visited
         nop
         nop
@@ -293,7 +293,7 @@ verse:
         lw   t5, 48(fp)            # lw      $5,48($fp)
         # Rearr computed t4 directly from fp + 28 to avoid RAW hazard on t2
         addi t4,    fp, 28         # move    $4,$2
-        lasw ra,    joyous         # la      $ra, joyous
+        lasw3 ra,    joyous         # la      $ra, joyous
         j    iterate_edges
         nop
         nop
@@ -302,7 +302,7 @@ joyous:
         addi t2,    fp, 28         # addiu   $2,$fp,28
         # Rearr computed t4 directly from fp + 28 to avoid RAW hazard on t2
         addi t4,    fp, 28         # move    $4,$2
-        lasw ra,    whispering     # la      $ra, whispering
+        lasw3 ra,    whispering     # la      $ra, whispering
         j    next_edge
         nop
         nop
@@ -374,8 +374,8 @@ snail:
         nop
         lw   t3,  0(t2)            # lw      $3,0($2)
         lw   t2,  4(t2)            # lw      $2,4($2)
-        # Rearr moved lasw ra, induce before mv t5/t4 to hide lw t3 and lw t2 latency
-        lasw ra,    induce         # la      $ra,induce
+        # Rearr moved lasw3 ra, induce before mv t5/t4 to hide lw t3 and lw t2 latency
+        lasw3 ra,    induce         # la      $ra,induce
         mv   t5,    t2             # move    $5,$2
         mv   t4,    t3             # move    $4,$3
         nop
@@ -466,9 +466,9 @@ has_edge:
         nop
         sw   t4, 32(fp)            # sw      $4,32($fp)
         sw   t5, 36(fp)            # sw      $5,36($fp)
-        # Rearr placed lw t3 before lasw t2 so lasw's 4 instructions hide lw t3 latency
+        # Rearr placed lw t3 before lasw3 t2 so lasw3's 4 instructions hide lw t3 latency
         lw   t3, 32(fp)            # lw      $3,32($fp)
-        lasw t2,    adjacencymatrix# la      $2,adjacencymatrix
+        lasw3 t2,    adjacencymatrix# la      $2,adjacencymatrix
         slli t3,    t3, 2          # sll     $3,$3,2
         nop
         nop
@@ -605,7 +605,7 @@ recast:
         nop
 pat:
 
-       	lasw t2, visited             # la      $2, visited
+       	lasw3 t2, visited             # la      $2, visited
         nop
         nop
         nop
@@ -689,7 +689,7 @@ evasive:
         nop
 representative:
 
-        lasw t2,    visited          # la      $2,visited
+        lasw3 t2,    visited          # la      $2,visited
         nop
         nop
         nop

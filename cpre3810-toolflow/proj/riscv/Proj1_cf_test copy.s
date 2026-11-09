@@ -110,8 +110,8 @@ bltu_ok:
     nop
     nop
 bgeu_ok:
-    # Rearr used lasw t3 before addi s0 so s0 update hides 1 cycle of t3 address load latency
-    lasw  t3, helper_fn
+    # Rearr used lasw3 t3 before addi s0 so s0 update hides 1 cycle of t3 address load latency
+    lasw3  t3, helper_fn
     addi  s0, s0, 32           # s0 = 63 (0x3F -> all 6 branch types passed!)
     nop
     nop

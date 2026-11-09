@@ -15,8 +15,8 @@
 main:
 
     # print unsorted array to output for testing purposes
-    # Rearr loaded array_size address via lasw and derived array address via addi a0, t0, 4 to hide lw a1 latency
-    lasw t0, array_size # get get address for array_size
+    # Rearr loaded array_size address via lasw3 and derived array address via addi a0, t0, 4 to hide lw a1 latency
+    lasw3 t0, array_size # get get address for array_size
     nop
     nop
     nop
@@ -33,7 +33,7 @@ main:
     nop
     nop
 
-    lasw t0, array_size
+    lasw3 t0, array_size
     nop
     nop
     nop
@@ -72,8 +72,8 @@ sort:
 
     # Save caller's return address
     addi sp, sp, -8
-    # Rearr placed lasw a1, temp_array right after addi sp so its 4 instructions completely hide sp latency
-    lasw a1, temp_array
+    # Rearr placed lasw3 a1, temp_array right after addi sp so its 4 instructions completely hide sp latency
+    lasw3 a1, temp_array
     sw ra, 0(sp)
     sw a3, 4(sp)
     
