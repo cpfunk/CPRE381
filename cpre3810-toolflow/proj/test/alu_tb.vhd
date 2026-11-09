@@ -4,8 +4,7 @@ use IEEE.NUMERIC_STD.all;
 
 use work.RISCV_types.all;
 
-library  std;
-use std.env.all;
+
 
 entity ALU_tb is
     generic(

@@ -6,8 +6,7 @@ use ieee.math_real.all;
 
 use work.RISCV_types.all;
 
-library  std;
-use std.env.all;
+
 
 entity CTRL_SIGS_REG is
     port (
