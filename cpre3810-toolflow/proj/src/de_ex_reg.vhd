@@ -92,8 +92,8 @@ begin
         i_CLK => i_CLK,
         i_RST => i_RST,
         i_WE => i_WE,
-        i_DATA => i_DE_EX_SIGS.REG_DATA1,
-        o_DATA => o_DE_EX_SIGS.REG_DATA1
+        i_DATA => i_DE_EX_SIGS.REG_DATA_OUT(0),
+        o_DATA => o_DE_EX_SIGS.REG_DATA_OUT(0)
     );
 
     REG_DATA2_REG: reg
@@ -104,8 +104,8 @@ begin
         i_CLK => i_CLK,
         i_RST => i_RST,
         i_WE => i_WE,
-        i_DATA => i_DE_EX_SIGS.REG_DATA2,
-        o_DATA => o_DE_EX_SIGS.REG_DATA2
+        i_DATA => i_DE_EX_SIGS.REG_DATA_OUT(1),
+        o_DATA => o_DE_EX_SIGS.REG_DATA_OUT(1)
     );
 
     PC_PLUS_4_REG: reg

@@ -98,7 +98,7 @@ architecture structure of RISCV_Processor is
       );
     end component;
 
-    component branch_unit is
+    component BRANCH_UNIT is
     port(
       i_opcode     : in  std_logic_vector(6 downto 0);
       i_funct3     : in  std_logic_vector(2 downto 0);
@@ -115,12 +115,11 @@ architecture structure of RISCV_Processor is
       DATA_WIDTH : integer := 32
     );
     port (
-      i_CLK         : in STD_LOGIC;
-      i_RST         : in STD_LOGIC;
-      i_WE          : in STD_LOGIC;
-      i_FLUSH       : in STD_LOGIC;
-      i_MEM_WB_SIGS : in MEM_WB_SIGS;
-      o_MEM_WB_SIGS : out MEM_WB_SIGS
+      i_CLK           : in STD_LOGIC;
+      i_RST           : in STD_LOGIC;
+      i_WE            : in STD_LOGIC;
+      i_MEM_WB_SIGS   : in MEM_WB_SIGS;
+      o_MEM_WB_SIGS    : out MEM_WB_SIGS
     );
   end component;
 
@@ -465,17 +464,14 @@ begin
     port map(
       i_CLK => iCLK,
       i_RST => iRST,
-      i_WE => s_MEM_WB_OUT.CTRL_SIGS.REG_WE and s_N_HALT,
+      i_WE => s_RegWr,
       i_RD => s_RegWrAddr,
       i_RS => (
           0 => s_IF_DE_OUT.INSTR(19 downto 15), -- RS1
           1 => s_IF_DE_OUT.INSTR(24 downto 20)  -- RS2
       ),
       i_DATA => s_RegWrData,
-      o_DATA => (
-        0 => s_DE_EX_IN.REG_DATA1,
-        1 => s_DE_EX_IN.REG_DATA2
-      )
+      o_DATA => s_DE_EX_IN.REG_DATA_OUT
   );
 
   IMM_CTRL_inst: IMM_CTRL
@@ -492,7 +488,7 @@ begin
   -- execute pass through signal assignments
   s_EX_MEM_IN.CTRL_SIGS <= s_DE_EX_OUT.CTRL_SIGS;
   s_EX_MEM_IN.RD        <= s_DE_EX_OUT.RD;
-  s_EX_MEM_IN.REG_DATA2 <= s_DE_EX_OUT.REG_DATA2;
+  s_EX_MEM_IN.REG_DATA2 <= s_DE_EX_OUT.REG_DATA_OUT(1);
 
   DE_EX_REG_inst: DE_EX_REG
    generic map(
@@ -516,7 +512,7 @@ begin
     port map(
       i_S =>    s_DE_EX_OUT.CTRL_SIGS.ALU_SRC_PC, 
       i_DATA => (
-          0 =>  s_DE_EX_OUT.REG_DATA1,   -- RS1
+          0 =>  s_DE_EX_OUT.REG_DATA_OUT(0),   -- RS1
           1 =>  s_DE_EX_OUT.PC,          -- PC
           2 =>  s_EX_MEM_OUT.EX_DATA,    -- forward from MEM stage
           3 =>  s_REG_IN_DATA            -- forward from WB stage
@@ -533,7 +529,7 @@ begin
     port map(
       i_S =>    s_DE_EX_OUT.CTRL_SIGS.ALU_SRC,    
       i_DATA => (
-          0 =>  s_DE_EX_OUT.REG_DATA2,
+          0 =>  s_DE_EX_OUT.REG_DATA_OUT(1), -- RS2
           1 =>  s_DE_EX_OUT.IMM,
           2 =>  s_EX_MEM_OUT.EX_DATA,  -- forward from MEM stage
           3 =>  s_REG_IN_DATA          -- forward from WB stage
@@ -556,7 +552,7 @@ begin
       o_OF => open
   );
 
-  BRANCH_UNIT_inst: branch_unit
+  BRANCH_UNIT_inst: BRANCH_UNIT
     port map(
       i_opcode     => s_DE_EX_OUT.OPCODE,
       i_funct3     => s_DE_EX_OUT.FUNCT3,
@@ -649,7 +645,6 @@ begin
       i_CLK         => iCLK,
       i_RST         => iRST,
       i_WE          => s_N_HALT,
-      i_FLUSH       => '0',
       i_MEM_WB_SIGS => s_MEM_WB_IN,
       o_MEM_WB_SIGS => s_MEM_WB_OUT
     );

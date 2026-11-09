@@ -68,7 +68,7 @@ begin
   -- 10 = PC + 4 Link Address
   -- 11 = Upper Immediate
   with i_opcode select
-    o_CTRL_SIGS.REG_SRC <=            "01" when OP_LOAD,
+    o_CTRL_SIGS.REG_SRC <=  "01" when OP_LOAD,
                             "10" when OP_JAL | OP_JALR,
                             "11" when OP_LUI,
                             "00" when others;
@@ -76,7 +76,7 @@ begin
 
  -- REGFILE & MEMORY WE 
   with i_opcode select
-    o_CTRL_SIGS.REG_WE <=             '1' when OP_R_TYPE 
+    o_CTRL_SIGS.REG_WE <=   '1' when OP_R_TYPE 
                                    | OP_I_ARITH 
                                    | OP_LOAD 
                                    | OP_JAL 
@@ -134,18 +134,12 @@ begin
   --                     101 -> SRL
   --                     110 -> OR
   --                     111 -> AND)
-  --(BRANCH) : (000 -> BEQ  
-  --            001 -> BNE  
-  --            100 -> BLT  
-  --            101 -> BGE  
-  --            110 -> BLTU 
-  --            111 -> BGEU 
-  --            010 / 011 -> Unused)
+
   with i_opcode select
-    o_CTRL_SIGS.ALU_CTRL <=     s_sub_sra & i_funct3 when OP_R_TYPE,
+    o_CTRL_SIGS.ALU_CTRL <=       s_sub_sra & i_funct3 when OP_R_TYPE,
                                   s_sub_sra & i_funct3 when OP_I_ARITH,
                                   "1000"               when OP_BRANCH,   
-                                  "0000"               when others;     
+                                  "0000"               when others;
 
 
  --TERMINATION
