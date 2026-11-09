@@ -12,32 +12,3 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/MEM_WB_REG_inst/CTRL_SIGS_REG_inst/o_CTRL_SIGS
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/IF_DE_REG_inst/o_IF_DE_SIGS
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/ALU/i_B
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/ALU/i_A
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/IMM_CTRL_inst/o_DATA
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/ALU/i_B
-add wave -position insertpoint vsim:/tb/MyRiscv/ALU_SRC_MUX/*
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/DE_EX_REG_inst/o_DE_EX_SIGS.CTRL_SIGS.ALU_SRC
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/IDECODE/o_CTRL_SIGS.ALU_SRC
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/DE_EX_REG_inst/i_DE_EX_SIGS.CTRL_SIGS.ALU_SRC
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/DE_EX_REG_inst/CTRL_SIGS_REG_inst/o_CTRL_SIGS
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/DE_EX_REG_inst/CTRL_SIGS_REG_inst/o_CTRL_SIGS.ALU_SRC
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/DE_EX_REG_inst/CTRL_SIGS_REG_inst/s_CTRL_SIGS
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/DE_EX_REG_inst/CTRL_SIGS_REG_inst/i_CTRL_SIGS.ALU_CTRL
-add wave -position insertpoint  \
-vsim:/tb/MyRiscv/DE_EX_REG_inst/CTRL_SIGS_REG_inst/i_CTRL_SIGS.ALU_SRC
