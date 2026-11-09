@@ -6,7 +6,8 @@ use ieee.math_real.all;
 
 use work.RISCV_types.all;
 
-
+library  std;
+use std.env.all;
 
 entity ALU_32BIT_tb is
     generic(
