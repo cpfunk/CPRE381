@@ -51,16 +51,16 @@ architecture rtl of CTRL_SIGS_REG is
 
 begin
 
-    s_CTRL_SIGS.ALU_SRC_PC      <= "00";
-    s_CTRL_SIGS.ALU_SRC         <= "00";
-    s_CTRL_SIGS.REG_SRC         <= "00";
-    s_CTRL_SIGS.REG_WE          <= '0';
-    s_CTRL_SIGS.MEM_WRITE       <= '0';
-    s_CTRL_SIGS.WRD             <= '0';
-    s_CTRL_SIGS.HWRD            <= '0';
-    s_CTRL_SIGS.UNSIGNED        <= '0';
-    s_CTRL_SIGS.ALU_CTRL        <= "0000";
-    s_CTRL_SIGS.N_HALT          <= '1'; -- don't halt!
+    s_NOP_SIGS.ALU_SRC_PC      <= "00";
+    s_NOP_SIGS.ALU_SRC         <= "00";
+    s_NOP_SIGS.REG_SRC         <= "00";
+    s_NOP_SIGS.REG_WE          <= '0';
+    s_NOP_SIGS.MEM_WRITE       <= '0';
+    s_NOP_SIGS.WRD             <= '0';
+    s_NOP_SIGS.HWRD            <= '0';
+    s_NOP_SIGS.UNSIGNED        <= '0';
+    s_NOP_SIGS.ALU_CTRL        <= "0000";
+    s_NOP_SIGS.N_HALT          <= '1'; -- don't halt!
 
     with i_FLUSH select
         s_CTRL_SIGS <=  s_NOP_SIGS  when '1',

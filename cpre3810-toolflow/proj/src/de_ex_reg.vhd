@@ -61,6 +61,18 @@ begin
         o_DATA => o_DE_EX_SIGS.OPCODE
     );
 
+    FUNC3_REG: reg
+     generic map(
+        DATA_WIDTH => 3
+    )
+     port map(
+        i_CLK => i_CLK,
+        i_RST => i_RST,
+        i_WE => i_WE,
+        i_DATA => i_DE_EX_SIGS.FUNCT3,
+        o_DATA => o_DE_EX_SIGS.FUNCT3
+    );
+
     CTRL_SIGS_REG_inst: CTRL_SIGS_REG
      port map(
         i_CLK => i_CLK,

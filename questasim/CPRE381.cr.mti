@@ -230,19 +230,6 @@ QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 -- Compiling architecture dataflow of mux2t1
 -- Loading entity mux2t1
 
-} {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/de_ex_reg.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/de_ex_reg.vhd
-QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
--- Loading package STANDARD
--- Loading package TEXTIO
--- Loading package std_logic_1164
--- Loading package NUMERIC_STD
--- Loading package MATH_REAL
--- Loading package RISCV_types
--- Loading package ENV
--- Compiling entity DE_EX_REG
--- Compiling architecture rtl of DE_EX_REG
-
 } {} {}} /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/shift_right_fixed.vhd {2 {vcom -work work -2008 -explicit -vopt -stats=none /home/cpfunk/CPRE381/cpre3810-toolflow/proj/src/shift_right_fixed.vhd
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
 ** Warning: (vcom-223) The environment variable MGC_HOME will be deprecated in future releases. Please use QSIM_HOME instead.
