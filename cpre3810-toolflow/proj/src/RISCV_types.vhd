@@ -59,11 +59,12 @@ package RISCV_types is
   type DE_EX_SIGS is record
     CTRL_SIGS   : CTRL_SIGS;
     OPCODE      : STD_LOGIC_VECTOR(6 downto 0);
+    FUNCT3      : STD_LOGIC_VECTOR(2 downto 0); 
     REG_DATA1   : STD_LOGIC_VECTOR(31 downto 0);
     REG_DATA2   : STD_LOGIC_VECTOR(31 downto 0);
     PC          : STD_LOGIC_VECTOR(31 downto 0);
     PC_PLUS_4   : STD_LOGIC_VECTOR(31 downto 0);
-    RD          : STD_LOGIC_VECTOR(5 downto 0);
+    RD          : STD_LOGIC_VECTOR(4 downto 0); 
     IMM         : STD_LOGIC_VECTOR(31 downto 0);
   end record;
 
@@ -71,14 +72,14 @@ package RISCV_types is
     CTRL_SIGS   : CTRL_SIGS;
     EX_DATA     : STD_LOGIC_VECTOR(31 downto 0);
     REG_DATA2   : STD_LOGIC_VECTOR(31 downto 0);
-    RD          : STD_LOGIC_VECTOR(5 downto 0);
+    RD          : STD_LOGIC_VECTOR(4 downto 0); 
   end record;
 
   type MEM_WB_SIGS is record
     CTRL_SIGS   : CTRL_SIGS;
     EX_DATA     : STD_LOGIC_VECTOR(31 downto 0);
     DMEM_DATA   : STD_LOGIC_VECTOR(31 downto 0);
-    RD          : STD_LOGIC_VECTOR(5 downto 0);
+    RD          : STD_LOGIC_VECTOR(4 downto 0); 
   end record;
 
 end package RISCV_types;
