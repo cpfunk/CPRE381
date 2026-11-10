@@ -46,7 +46,13 @@ architecture rtl of DE_EX_REG is
         );
     end component;
 
+    signal s_OPCODE : STD_LOGIC_VECTOR(6 downto 0);
+    signal s_FUNCT3 : STD_LOGIC_VECTOR(2 downto 0);
+
 begin
+
+    s_OPCODE <= 7x"0" when i_FLUSH = '1' else i_DE_EX_SIGS.OPCODE;
+    s_FUNCT3 <= 3x"0" when i_FLUSH = '1' else i_DE_EX_SIGS.FUNCT3;
 
     OPCODE_REG: reg
      generic map(
@@ -56,7 +62,7 @@ begin
         i_CLK => i_CLK,
         i_RST => i_RST,
         i_WE => i_WE,
-        i_DATA => i_DE_EX_SIGS.OPCODE,
+        i_DATA => s_OPCODE,
         o_DATA => o_DE_EX_SIGS.OPCODE
     );
 
@@ -68,7 +74,7 @@ begin
         i_CLK => i_CLK,
         i_RST => i_RST,
         i_WE => i_WE,
-        i_DATA => i_DE_EX_SIGS.FUNCT3,
+        i_DATA => s_FUNCT3,
         o_DATA => o_DE_EX_SIGS.FUNCT3
     );
 

@@ -8,7 +8,7 @@
 # | F D E M W
 # |   F D E M W
 # |     F D E M W
-# |  	 F D E M W
+# |  	  F D E M W
 # |         F D E M W --> since regfile not negative edge triggered: Decode only after writeback --> 3 nops inbetween
 
 main:
