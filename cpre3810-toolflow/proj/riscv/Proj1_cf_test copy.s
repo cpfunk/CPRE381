@@ -18,14 +18,14 @@ depth_reached:
 main:
     # Init
     lui   sp, 0x10011
-    # Rearr moved s0, t0, t1 initializations into the 3 hazard slots between lui sp and addi sp
+    # rearr: moved s0, t0, t1 initializations into the 3 hazard slots between lui sp and addi sp
     addi  s0, x0, 0            
     addi  t0, x0, 10           # t0 = 10
     addi  t1, x0, 10           # t1 = 10
 
     # Save main frame 
     addi  sp, sp, -16
-    # Rearr placed t2 initialization in the 1st hazard slot after addi sp
+    # rearr: placed t2 initialization in the 1st hazard slot after addi sp
     addi  t2, x0, -5           # t2 = -5 (0xFFFFFFFB)
     nop
     nop
@@ -110,8 +110,8 @@ bltu_ok:
     nop
     nop
 bgeu_ok:
-    # Rearr used lasw3 t3 before addi s0 so s0 update hides 1 cycle of t3 address load latency
-    lasw3  t3, helper_fn
+    # rearr: used lasw3 t3 before addi s0 so s0 update hides 1 cycle of t3 address load latency
+    lasw3 t3, helper_fn
     addi  s0, s0, 32           # s0 = 63 (0x3F -> all 6 branch types passed!)
     nop
     nop
@@ -124,25 +124,22 @@ bgeu_ok:
     # Recursive Call
     # Returns 5 + 4 + 3 + 2 + 1 + 0 = 15 in a0
     addi  a0, x0, 5            # n = 5 
-    # Rearr preloaded cf_result upper address into t4 during a0 hazard window
-    lui   t4, 0x10010
-    nop
-    nop
     jal   ra, recurse_sum      # a0 = 15
     nop
     nop
 
     # branch status (127) + rec sum (15) = 142 (0x8E)
-    nop
+    # rearr: placed lasw3 t4, cf_result before add s0, s0, a0 so lasw3 hides a0 return latency!
+    lasw3 t4, cf_result
     add   s0, s0, a0           # s0 = 127 + 15 = 142
-    # Rearr restored ra early during s0 writeback latency
-    lw    ra, 12(sp)
+    nop
     nop
     nop
     sw    s0, 0(t4)            
 
     # Restore main and halt
     lw    s0, 8(sp)
+    lw    ra, 12(sp)
     addi  sp, sp, 16
     jal   x0, halt
     nop
@@ -163,16 +160,14 @@ helper_fn:
 # 16-byte activation record on the stack for each call
 recurse_sum:
     addi  sp, sp, -16          # activation record on stack
-    # Rearr loaded data segment base 0x10010000 into t0 during sp hazard window
-    lui   t0, 0x10010
-    nop
-    nop
+    # rearr: placed lasw3 t0, depth_reached right after addi sp so its 5 instructions hide sp latency with 0 NOPs!
+    lasw3 t0, depth_reached
     sw    ra, 12(sp)           
     sw    s1, 8(sp)            
     sw    a0, 4(sp)           
 
     # Track number
-    lw    t1, 4(t0)
+    lw    t1, 0(t0)
     nop
     nop
     nop
@@ -180,7 +175,7 @@ recurse_sum:
     nop
     nop
     nop
-    sw    t1, 4(t0)
+    sw    t1, 0(t0)
 
     # if n <= 0 (i.e. x0 >= a0), return 0
     bge   x0, a0, recurse_base
@@ -190,9 +185,8 @@ recurse_sum:
     #return n + recurse_sum(n - 1)
     addi  s1, a0, 0            # s1 = n
     addi  a0, a0, -1           # a0 = n - 1
-    nop
-    nop
     jal   ra, recurse_sum      # recursive call
+    nop
     nop
     nop
     add   a0, s1, a0           # a0 = n + recurse_sum(n - 1)
