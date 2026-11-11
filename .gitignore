@@ -1,3 +1,14 @@
 /cpre3810-toolflow/output/
 /cpre3810-toolflow/submissions/
 /project1
+
+# Toolflow simulation containers & ModelSim build artifacts
+/cpre3810-toolflow/containers/
+/cpre3810-toolflow/internal/ModelSimContainer/
+/cpre3810-toolflow/temp/
+**/work/
+*.log
+
+# Python bytecode cache
+**/__pycache__/
+*.pyc
