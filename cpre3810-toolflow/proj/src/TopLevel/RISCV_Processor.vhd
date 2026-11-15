@@ -98,15 +98,23 @@ architecture structure of RISCV_Processor is
       );
     end component;
 
-    component BRANCH_UNIT is
+  component BRANCH_UNIT is
     port(
-      i_opcode     : in  std_logic_vector(6 downto 0);
-      i_funct3     : in  std_logic_vector(2 downto 0);
-      i_LT         : in  std_logic;
-      i_LTU        : in  std_logic;
-      i_EQ         : in  std_logic;
-      o_J_REG      : out std_logic;
-      o_PC_ADD_IMM : out std_logic
+        i_opcode     : in  std_logic_vector(6 downto 0);
+        i_funct3     : in  std_logic_vector(2 downto 0);
+        i_LT         : in  std_logic;
+        i_LTU        : in  std_logic;
+        i_EQ         : in  std_logic;
+        o_J_REG      : out std_logic;
+        o_TAKEN      : out std_logic;
+        o_PC_ADD_IMM : out std_logic
+    );
+  end component;
+
+  component CTRL_HAZARD_UNIT is
+    port(
+        i_TAKEN     : in STD_LOGIC;
+        o_BUBBLE    : out STD_LOGIC
     );
   end component;
 
@@ -191,6 +199,24 @@ architecture structure of RISCV_Processor is
             o_PC    : out STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0)
         );
     end component;
+
+    component FWD_UNIT is
+        port(
+            i_RS1           : in STD_LOGIC_VECTOR(4 downto 0);
+            i_RS2           : in STD_LOGIC_VECTOR(4 downto 0);
+            i_MEM_REG_WRITE : in STD_LOGIC;
+            i_MEM_REG_SRC   : in STD_LOGIC_VECTOR(1 downto 0);
+            i_WB_REG_WRITE  : in STD_LOGIC;
+            i_RD_MEM        : in STD_LOGIC_VECTOR(4 downto 0);
+            i_RD_WB         : in STD_LOGIC_VECTOR(4 downto 0);
+            i_ALU_SEL_S1    : in STD_LOGIC_VECTOR(1 downto 0);
+            i_ALU_SEL_S2    : in STD_LOGIC_VECTOR(1 downto 0);
+            o_SEL_S1        : out STD_LOGIC_VECTOR(1 downto 0);
+            o_SEL_S2        : out STD_LOGIC_VECTOR(1 downto 0);
+            o_EX_STALL      : out STD_LOGIC
+        );
+    end component;
+
 
     component ADDER_32BIT is
         generic (
@@ -298,8 +324,8 @@ architecture structure of RISCV_Processor is
 
     -- misc
       signal s_N_HALT                 : STD_LOGIC;
-      signal s_ALU_SRC_PC_MUX_OUT     : STD_LOGIC_VECTOR(N-1 downto 0);
-      signal s_ALU_SRC_MUX_OUT        : STD_LOGIC_VECTOR(N-1 downto 0);
+      signal s_ALU_SEL_S1_MUX_OUT     : STD_LOGIC_VECTOR(N-1 downto 0);
+      signal s_ALU_SEL_S2_MUX_OUT        : STD_LOGIC_VECTOR(N-1 downto 0);
 
       signal s_PC_ADD_IMM_MUX_OUT     : STD_LOGIC_VECTOR(N-1 downto 0);
       signal s_PC_ADD_IMM_OUT         : STD_LOGIC_VECTOR(N-1 downto 0);
@@ -321,6 +347,15 @@ architecture structure of RISCV_Processor is
 
       signal s_MEM_WB_IN  : MEM_WB_SIGS;
       signal s_MEM_WB_OUT : MEM_WB_SIGS;
+
+    -- for branch unit
+      signal s_TAKEN      : STD_LOGIC;
+      signal s_BUBBLE     : STD_LOGIC;
+
+    -- for forwarding unit
+      signal s_SEL_S1       : STD_LOGIC_VECTOR(1 downto 0);
+      signal s_SEL_S2       : STD_LOGIC_VECTOR(1 downto 0);
+      signal s_EX_STALL     : STD_LOGIC;
 
 begin
   s_Ovfl <= '0'; -- RISC-V does not have hardware overflow detection.
@@ -347,7 +382,7 @@ begin
    port map(
       i_CLK => iCLK,
       i_RST => iRST,
-      i_HALT => s_HALT,
+      i_HALT => s_HALT and (not s_EX_STALL),
       i_NEXT => s_PC_ADD_IMM_MUX_OUT,
       o_PC => s_IF_DE_IN.PC
   );
@@ -426,6 +461,9 @@ begin
   s_DE_EX_IN.PC         <= s_IF_DE_OUT.PC;
   s_DE_EX_IN.RD         <= s_IF_DE_OUT.INSTR(11 downto 7);
   s_DE_EX_IN.FUNCT3     <= s_IF_DE_OUT.INSTR(14 downto 12);
+  s_DE_EX_IN.RS1        <= s_IF_DE_OUT.INSTR(19 downto 15); -- RS1
+  s_DE_EX_IN.RS2        <= s_IF_DE_OUT.INSTR(24 downto 20);  -- RS2
+
 
   IF_DE_REG_inst: IF_DE_REG
    generic map(
@@ -434,8 +472,8 @@ begin
    port map(
       i_CLK => iCLK,
       i_RST => iRST,
-      i_WE => s_N_HALT,
-      i_FLUSH => '0', -- FIXME
+      i_WE => s_N_HALT and (not s_EX_STALL),
+      i_FLUSH => s_BUBBLE,
       i_IF_DE_SIGS => s_IF_DE_IN,
       o_IF_DE_SIGS => s_IF_DE_OUT
   );
@@ -455,7 +493,7 @@ begin
   s_RegWrAddr <= s_MEM_WB_OUT.RD;
   s_RegWrData <= s_REG_IN_DATA;
 
-  s_RegWr   <= s_MEM_WB_OUT.CTRL_SIGS.REG_WE and s_N_HALT;
+  s_RegWr     <= s_MEM_WB_OUT.CTRL_SIGS.REG_WE and s_N_HALT;
 
   REG_FILE_inst: reg_file
     generic map(
@@ -468,8 +506,8 @@ begin
       i_WE => s_RegWr,
       i_RD => s_RegWrAddr,
       i_RS => (
-          0 => s_IF_DE_OUT.INSTR(19 downto 15), -- RS1
-          1 => s_IF_DE_OUT.INSTR(24 downto 20)  -- RS2
+          0 => s_DE_EX_IN.RS1,
+          1 => s_DE_EX_IN.RS2
       ),
       i_DATA => s_RegWrData,
       o_DATA => s_DE_EX_IN.REG_DATA_OUT
@@ -489,7 +527,6 @@ begin
   -- execute pass through signal assignments
   s_EX_MEM_IN.CTRL_SIGS <= s_DE_EX_OUT.CTRL_SIGS;
   s_EX_MEM_IN.RD        <= s_DE_EX_OUT.RD;
-  s_EX_MEM_IN.REG_DATA2 <= s_DE_EX_OUT.REG_DATA_OUT(1);
 
   DE_EX_REG_inst: DE_EX_REG
    generic map(
@@ -498,44 +535,61 @@ begin
    port map(
       i_CLK => iCLK,
       i_RST => iRST,
-      i_WE => s_N_HALT,
-      i_FLUSH => '0', -- FIXME
+      i_WE => s_N_HALT and (not s_EX_STALL),
+      i_FLUSH => s_BUBBLE,
       i_DE_EX_SIGS => s_DE_EX_IN,
       o_DE_EX_SIGS => s_DE_EX_OUT
   );
 
-  ALU_SRC_PC_MUX: BUS_MUX_NTO1
+  ALU_SEL_S1_MUX: BUS_MUX_NTO1
     generic map(
       DATA_WIDTH => N,
       LOG2_N => 2,
       N => 4
   )
     port map(
-      i_S =>    s_DE_EX_OUT.CTRL_SIGS.ALU_SRC_PC, 
+      i_S =>    s_SEL_S1, 
       i_DATA => (
-          0 =>  s_DE_EX_OUT.REG_DATA_OUT(0),   -- RS1
-          1 =>  s_DE_EX_OUT.PC,          -- PC
-          2 =>  s_EX_MEM_OUT.EX_DATA,    -- forward from MEM stage
-          3 =>  s_REG_IN_DATA            -- forward from WB stage
+          0 =>  s_DE_EX_OUT.REG_DATA_OUT(0),    -- R[RS1]
+          1 =>  s_DE_EX_OUT.PC,                 -- PC
+          2 =>  s_EX_MEM_OUT.EX_DATA,           -- forward from MEM stage
+          3 =>  s_REG_IN_DATA                   -- forward from WB stage
       ),
-      o_DATA => s_ALU_SRC_PC_MUX_OUT
+      o_DATA => s_ALU_SEL_S1_MUX_OUT
   );
 
-  ALU_SRC_MUX: BUS_MUX_NTO1
+  ALU_SEL_S2_MUX: BUS_MUX_NTO1
     generic map(
       DATA_WIDTH => N,
       LOG2_N => 2,
       N => 4
   )
     port map(
-      i_S =>    s_DE_EX_OUT.CTRL_SIGS.ALU_SRC,    
+      i_S =>    s_SEL_S2,    
       i_DATA => (
-          0 =>  s_DE_EX_OUT.REG_DATA_OUT(1), -- RS2
-          1 =>  s_DE_EX_OUT.IMM,
-          2 =>  s_EX_MEM_OUT.EX_DATA,  -- forward from MEM stage
-          3 =>  s_REG_IN_DATA          -- forward from WB stage
+          0 =>  s_DE_EX_OUT.REG_DATA_OUT(1),  -- R[RS2]
+          1 =>  s_DE_EX_OUT.IMM,              -- R[RS2]
+          2 =>  s_EX_MEM_OUT.EX_DATA,         -- Forward from MEM stage
+          3 =>  s_REG_IN_DATA                 -- Forward from WB stage
       ),
-      o_DATA => s_ALU_SRC_MUX_OUT
+      o_DATA => s_ALU_SEL_S2_MUX_OUT
+  );
+
+  MEM_DATA_SRC_MUX: BUS_MUX_NTO1
+   generic map(
+      DATA_WIDTH => N,
+      LOG2_N => 2,
+      N => 4
+  )
+   port map(
+      i_S => s_SEL_S2,
+      i_DATA => (
+        0 => s_DE_EX_OUT.REG_DATA_OUT(1),
+        1 => s_DE_EX_OUT.REG_DATA_OUT(1),
+        2 => s_EX_MEM_OUT.EX_DATA,        -- forward from MEM stage
+        3 => s_REG_IN_DATA                -- forward from WB stage
+      ),
+      o_DATA => s_EX_MEM_IN.REG_DATA2
   );
 
   ALU: ALU_32BIT
@@ -544,13 +598,29 @@ begin
   )
     port map(
       i_ALU_CTRL => s_DE_EX_OUT.CTRL_SIGS.ALU_CTRL,
-      i_A => s_ALU_SRC_PC_MUX_OUT,
-      i_B => s_ALU_SRC_MUX_OUT,
+      i_A => s_ALU_SEL_S1_MUX_OUT,
+      i_B => s_ALU_SEL_S2_MUX_OUT,
       o_RESULT => s_ALU_OUT,
       o_EQUAL => s_EQUAL,
       o_LT => s_LESS_THAN,
       o_LTU => s_LESS_THAN_UNSIGNED,
       o_OF => open
+  );
+
+  FWD_UNIT_inst: FWD_UNIT
+   port map(
+      i_RS1 => s_DE_EX_OUT.RS1,
+      i_RS2 => s_DE_EX_OUT.RS2,
+      i_MEM_REG_WRITE => s_EX_MEM_OUT.CTRL_SIGS.REG_WE,
+      i_MEM_REG_SRC => s_EX_MEM_OUT.CTRL_SIGS.REG_SRC,
+      i_WB_REG_WRITE => s_MEM_WB_OUT.CTRL_SIGS.REG_WE,
+      i_RD_MEM => s_EX_MEM_OUT.RD,
+      i_RD_WB => s_MEM_WB_OUT.RD,
+      i_ALU_SEL_S1 => s_DE_EX_OUT.CTRL_SIGS.ALU_SEL_S1,
+      i_ALU_SEL_S2 => s_DE_EX_OUT.CTRL_SIGS.ALU_SEL_S2,
+      o_SEL_S1 => s_SEL_S1,
+      o_SEL_S2 => s_SEL_S2,
+      o_EX_STALL => s_EX_STALL
   );
 
   BRANCH_UNIT_inst: BRANCH_UNIT
@@ -561,8 +631,15 @@ begin
       i_LTU        => s_LESS_THAN_UNSIGNED,
       i_EQ         => s_EQUAL,
       o_J_REG      => s_J_REG,
+      o_TAKEN      => s_TAKEN,
       o_PC_ADD_IMM => s_PC_ADD_IMM
-    );
+  );
+
+  CTRL_HAZARD_UNIT_inst: CTRL_HAZARD_UNIT
+   port map(
+      i_TAKEN => s_TAKEN,
+      o_BUBBLE => s_BUBBLE
+  );
 
   REG_SRC_MUX: BUS_MUX_NTO1
     generic map(
@@ -598,7 +675,7 @@ begin
       i_CLK => iCLK,
       i_RST => iRST,
       i_WE => s_N_HALT,
-      i_FLUSH => '0', --FIXME
+      i_FLUSH => s_EX_STALL,
       i_EX_MEM_SIGS => s_EX_MEM_IN,
       o_EX_MEM_SIGS => s_EX_MEM_OUT
   );

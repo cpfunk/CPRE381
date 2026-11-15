@@ -78,18 +78,18 @@ Info (332115): Path #1: Setup slack is -22.962 (VIOLATED)
     Info (332115):     16.265      0.125 FF  CELL  IMem|Mux13~510|combout
     Info (332115):     16.499      0.234 FF    IC  IMem|Mux13~681|datac
     Info (332115):     16.780      0.281 FF  CELL  IMem|Mux13~681|combout
-    Info (332115):     18.491      1.711 FF    IC  ALU_SRC_PC_MUX|o_DATA[26]~116|datab
-    Info (332115):     18.916      0.425 FF  CELL  ALU_SRC_PC_MUX|o_DATA[26]~116|combout
-    Info (332115):     19.186      0.270 FF    IC  ALU_SRC_PC_MUX|o_DATA[26]~117|datab
-    Info (332115):     19.611      0.425 FF  CELL  ALU_SRC_PC_MUX|o_DATA[26]~117|combout
-    Info (332115):     20.547      0.936 FF    IC  ALU_SRC_PC_MUX|o_DATA[26]~118|datac
-    Info (332115):     20.828      0.281 FF  CELL  ALU_SRC_PC_MUX|o_DATA[26]~118|combout
-    Info (332115):     21.100      0.272 FF    IC  ALU_SRC_PC_MUX|o_DATA[26]~121|datab
-    Info (332115):     21.504      0.404 FF  CELL  ALU_SRC_PC_MUX|o_DATA[26]~121|combout
-    Info (332115):     21.735      0.231 FF    IC  ALU_SRC_PC_MUX|o_DATA[26]~126|datac
-    Info (332115):     22.016      0.281 FF  CELL  ALU_SRC_PC_MUX|o_DATA[26]~126|combout
-    Info (332115):     22.243      0.227 FF    IC  ALU_SRC_PC_MUX|o_DATA[26]~129|datad
-    Info (332115):     22.368      0.125 FF  CELL  ALU_SRC_PC_MUX|o_DATA[26]~129|combout
+    Info (332115):     18.491      1.711 FF    IC  ALU_SEL_S1_MUX|o_DATA[26]~116|datab
+    Info (332115):     18.916      0.425 FF  CELL  ALU_SEL_S1_MUX|o_DATA[26]~116|combout
+    Info (332115):     19.186      0.270 FF    IC  ALU_SEL_S1_MUX|o_DATA[26]~117|datab
+    Info (332115):     19.611      0.425 FF  CELL  ALU_SEL_S1_MUX|o_DATA[26]~117|combout
+    Info (332115):     20.547      0.936 FF    IC  ALU_SEL_S1_MUX|o_DATA[26]~118|datac
+    Info (332115):     20.828      0.281 FF  CELL  ALU_SEL_S1_MUX|o_DATA[26]~118|combout
+    Info (332115):     21.100      0.272 FF    IC  ALU_SEL_S1_MUX|o_DATA[26]~121|datab
+    Info (332115):     21.504      0.404 FF  CELL  ALU_SEL_S1_MUX|o_DATA[26]~121|combout
+    Info (332115):     21.735      0.231 FF    IC  ALU_SEL_S1_MUX|o_DATA[26]~126|datac
+    Info (332115):     22.016      0.281 FF  CELL  ALU_SEL_S1_MUX|o_DATA[26]~126|combout
+    Info (332115):     22.243      0.227 FF    IC  ALU_SEL_S1_MUX|o_DATA[26]~129|datad
+    Info (332115):     22.368      0.125 FF  CELL  ALU_SEL_S1_MUX|o_DATA[26]~129|combout
     Info (332115):     22.671      0.303 FF    IC  ALU|SHIFT_32BIT_inst|\G_LOG_SHIFT_32BIT:0:SHIFT_LEFT_FIXED_inst|BUS_MUX_2TO1|o_DATA[4]~46|datab
     Info (332115):     23.075      0.404 FF  CELL  ALU|SHIFT_32BIT_inst|\G_LOG_SHIFT_32BIT:0:SHIFT_LEFT_FIXED_inst|BUS_MUX_2TO1|o_DATA[4]~46|combout
     Info (332115):     23.833      0.758 FF    IC  ALU|SHIFT_32BIT_inst|\G_LOG_SHIFT_32BIT:0:SHIFT_LEFT_FIXED_inst|BUS_MUX_2TO1|o_DATA[4]~48|datab
@@ -235,12 +235,12 @@ Info (332115): Path #1: Setup slack is -19.590 (VIOLATED)
     Info (332115):     14.937      0.144 RR  CELL  IMem|Mux13~510|combout
     Info (332115):     15.123      0.186 RR    IC  IMem|Mux13~681|datac
     Info (332115):     15.388      0.265 RR  CELL  IMem|Mux13~681|combout
-    Info (332115):     16.871      1.483 RR    IC  ALU_SRC_PC_MUX|o_DATA[0]~665|datad
-    Info (332115):     17.015      0.144 RR  CELL  ALU_SRC_PC_MUX|o_DATA[0]~665|combout
-    Info (332115):     17.202      0.187 RR    IC  ALU_SRC_PC_MUX|o_DATA[0]~666|datad
-    Info (332115):     17.346      0.144 RR  CELL  ALU_SRC_PC_MUX|o_DATA[0]~666|combout
-    Info (332115):     18.614      1.268 RR    IC  ALU_SRC_PC_MUX|o_DATA[0]~667|datab
-    Info (332115):     18.965      0.351 RR  CELL  ALU_SRC_PC_MUX|o_DATA[0]~667|combout
+    Info (332115):     16.871      1.483 RR    IC  ALU_SEL_S1_MUX|o_DATA[0]~665|datad
+    Info (332115):     17.015      0.144 RR  CELL  ALU_SEL_S1_MUX|o_DATA[0]~665|combout
+    Info (332115):     17.202      0.187 RR    IC  ALU_SEL_S1_MUX|o_DATA[0]~666|datad
+    Info (332115):     17.346      0.144 RR  CELL  ALU_SEL_S1_MUX|o_DATA[0]~666|combout
+    Info (332115):     18.614      1.268 RR    IC  ALU_SEL_S1_MUX|o_DATA[0]~667|datab
+    Info (332115):     18.965      0.351 RR  CELL  ALU_SEL_S1_MUX|o_DATA[0]~667|combout
     Info (332115):     19.174      0.209 RR    IC  ALU|ADD_SUB_32BIT_inst|adder0|\g_32BIT_adder:0:adder_i|or4|o_F~0|datad
     Info (332115):     19.299      0.125 RF  CELL  ALU|ADD_SUB_32BIT_inst|adder0|\g_32BIT_adder:0:adder_i|or4|o_F~0|combout
     Info (332115):     19.506      0.207 FF    IC  ALU|ADD_SUB_32BIT_inst|adder0|\g_32BIT_adder:0:adder_i|or4|o_F~1|datad
@@ -384,16 +384,16 @@ Info (332115): Path #1: Setup slack is -2.585 (VIOLATED)
     Info (332115):      8.350      0.133 FF  CELL  IMem|Mux16~510|combout
     Info (332115):      8.456      0.106 FF    IC  IMem|Mux16~681|datad
     Info (332115):      8.519      0.063 FF  CELL  IMem|Mux16~681|combout
-    Info (332115):      8.993      0.474 FF    IC  ALU_SRC_PC_MUX|o_DATA[1]~17|dataa
-    Info (332115):      9.186      0.193 FF  CELL  ALU_SRC_PC_MUX|o_DATA[1]~17|combout
-    Info (332115):     10.448      1.262 FF    IC  ALU_SRC_PC_MUX|o_DATA[30]~40|datad
-    Info (332115):     10.511      0.063 FF  CELL  ALU_SRC_PC_MUX|o_DATA[30]~40|combout
-    Info (332115):     10.618      0.107 FF    IC  ALU_SRC_PC_MUX|o_DATA[30]~41|datad
-    Info (332115):     10.681      0.063 FF  CELL  ALU_SRC_PC_MUX|o_DATA[30]~41|combout
-    Info (332115):     11.553      0.872 FF    IC  ALU_SRC_PC_MUX|o_DATA[30]~42|datad
-    Info (332115):     11.616      0.063 FF  CELL  ALU_SRC_PC_MUX|o_DATA[30]~42|combout
-    Info (332115):     11.726      0.110 FF    IC  ALU_SRC_PC_MUX|o_DATA[30]~45|datac
-    Info (332115):     11.859      0.133 FF  CELL  ALU_SRC_PC_MUX|o_DATA[30]~45|combout
+    Info (332115):      8.993      0.474 FF    IC  ALU_SEL_S1_MUX|o_DATA[1]~17|dataa
+    Info (332115):      9.186      0.193 FF  CELL  ALU_SEL_S1_MUX|o_DATA[1]~17|combout
+    Info (332115):     10.448      1.262 FF    IC  ALU_SEL_S1_MUX|o_DATA[30]~40|datad
+    Info (332115):     10.511      0.063 FF  CELL  ALU_SEL_S1_MUX|o_DATA[30]~40|combout
+    Info (332115):     10.618      0.107 FF    IC  ALU_SEL_S1_MUX|o_DATA[30]~41|datad
+    Info (332115):     10.681      0.063 FF  CELL  ALU_SEL_S1_MUX|o_DATA[30]~41|combout
+    Info (332115):     11.553      0.872 FF    IC  ALU_SEL_S1_MUX|o_DATA[30]~42|datad
+    Info (332115):     11.616      0.063 FF  CELL  ALU_SEL_S1_MUX|o_DATA[30]~42|combout
+    Info (332115):     11.726      0.110 FF    IC  ALU_SEL_S1_MUX|o_DATA[30]~45|datac
+    Info (332115):     11.859      0.133 FF  CELL  ALU_SEL_S1_MUX|o_DATA[30]~45|combout
     Info (332115):     11.971      0.112 FF    IC  ALU|SHIFT_32BIT_inst|\G_LOG_SHIFT_32BIT:0:SHIFT_LEFT_FIXED_inst|BUS_MUX_2TO1|o_DATA[29]~25|datad
     Info (332115):     12.034      0.063 FF  CELL  ALU|SHIFT_32BIT_inst|\G_LOG_SHIFT_32BIT:0:SHIFT_LEFT_FIXED_inst|BUS_MUX_2TO1|o_DATA[29]~25|combout
     Info (332115):     13.059      1.025 FF    IC  ALU|SHIFT_32BIT_inst|\G_LOG_SHIFT_32BIT:0:SHIFT_LEFT_FIXED_inst|BUS_MUX_2TO1|o_DATA[30]~26|datad

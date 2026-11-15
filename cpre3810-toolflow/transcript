@@ -12,5 +12,39 @@
 # // of the Customer's facilities without the express written permission of SISW,
 # // and may not be used in any way not expressly authorized by SISW.
 # //
-# Project file /home/jbiced3/cpre3810/cpre3810-toolflow/test.mpf was not found.
-# Unable to open project.
+# Loading project elev
+# reading /usr/local/mentor/questasim/linux_x86_64/../questa.ini
+add wave -position insertpoint vsim1:/tb/MyRiscv/DE_EX_REG_inst/*
+add wave -position insertpoint vsim1:/tb/MyRiscv/IF_DE_REG_inst/*
+add wave -position insertpoint vsim1:/tb/MyRiscv/EX_MEM_REG_inst/*
+add wave -position insertpoint vsim1:/tb/MyRiscv/MEM_WB_REG_inst/*
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/DE_EX_REG_inst/i_DE_EX_SIGS
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/IMem/q
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/IMem/addr
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/PC_inst/o_PC
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/CTRL_HAZARD_UNIT_inst/o_BUBBLE
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/IMem/q_local
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/IMem/we \
+vsim1:/tb/MyRiscv/IMem/q_local \
+vsim1:/tb/MyRiscv/IMem/q \
+vsim1:/tb/MyRiscv/IMem/data \
+vsim1:/tb/MyRiscv/IMem/clk \
+vsim1:/tb/MyRiscv/IMem/be \
+vsim1:/tb/MyRiscv/IMem/addr
+add wave -position insertpoint  \
+vsim1:/tb/MyRiscv/IMem/we \
+vsim1:/tb/MyRiscv/IMem/q_local \
+vsim1:/tb/MyRiscv/IMem/q \
+vsim1:/tb/MyRiscv/IMem/data \
+vsim1:/tb/MyRiscv/IMem/clk \
+vsim1:/tb/MyRiscv/IMem/be \
+vsim1:/tb/MyRiscv/IMem/addr
+dataset close vsim
+# Dataset "vsim" closed.

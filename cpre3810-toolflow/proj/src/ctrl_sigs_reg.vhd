@@ -50,8 +50,8 @@ architecture rtl of CTRL_SIGS_REG is
 
 begin
 
-    s_NOP_SIGS.ALU_SRC_PC      <= "00";
-    s_NOP_SIGS.ALU_SRC         <= "00";
+    s_NOP_SIGS.ALU_SEL_S1      <= "00";
+    s_NOP_SIGS.ALU_SEL_S2         <= "00";
     s_NOP_SIGS.REG_SRC         <= "00";
     s_NOP_SIGS.REG_WE          <= '0';
     s_NOP_SIGS.MEM_WRITE       <= '0';
@@ -66,8 +66,8 @@ begin
                         i_CTRL_SIGS when others;
 
     -- input signals
-    s_STD_LOGIC_SIGS_IN(1 downto 0) <= s_CTRL_SIGS.ALU_SRC_PC;
-    s_STD_LOGIC_SIGS_IN(3 downto 2) <= s_CTRL_SIGS.ALU_SRC;
+    s_STD_LOGIC_SIGS_IN(1 downto 0) <= s_CTRL_SIGS.ALU_SEL_S1;
+    s_STD_LOGIC_SIGS_IN(3 downto 2) <= s_CTRL_SIGS.ALU_SEL_S2;
     s_STD_LOGIC_SIGS_IN(4) <= s_CTRL_SIGS.REG_WE;
     s_STD_LOGIC_SIGS_IN(5) <= s_CTRL_SIGS.MEM_WRITE;
     s_STD_LOGIC_SIGS_IN(6) <= s_CTRL_SIGS.WRD;
@@ -75,8 +75,8 @@ begin
     s_STD_LOGIC_SIGS_IN(8) <= s_CTRL_SIGS.UNSIGNED;
 
     -- output signals
-    o_CTRL_SIGS.ALU_SRC_PC  <= s_STD_LOGIC_SIGS_OUT(1 downto 0);
-    o_CTRL_SIGS.ALU_SRC     <= s_STD_LOGIC_SIGS_OUT(3 downto 2);
+    o_CTRL_SIGS.ALU_SEL_S1  <= s_STD_LOGIC_SIGS_OUT(1 downto 0);
+    o_CTRL_SIGS.ALU_SEL_S2     <= s_STD_LOGIC_SIGS_OUT(3 downto 2);
     o_CTRL_SIGS.REG_WE      <= s_STD_LOGIC_SIGS_OUT(4);
     o_CTRL_SIGS.MEM_WRITE   <= s_STD_LOGIC_SIGS_OUT(5);
     o_CTRL_SIGS.WRD         <= s_STD_LOGIC_SIGS_OUT(6);

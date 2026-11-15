@@ -55,8 +55,8 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Standard Edition
  47. Parameter Settings for User Entity Instance: reg_file:REG_FILE_inst|BUS_MUX_NTO1:BUS_MUX0
  48. Parameter Settings for User Entity Instance: reg_file:REG_FILE_inst|BUS_MUX_NTO1:BUS_MUX1
  49. Parameter Settings for User Entity Instance: BUS_MUX_NTO1:REG_SRC_MUX
- 50. Parameter Settings for User Entity Instance: BUS_MUX_NTO1:ALU_SRC_PC_MUX
- 51. Parameter Settings for User Entity Instance: BUS_MUX_NTO1:ALU_SRC_MUX
+ 50. Parameter Settings for User Entity Instance: BUS_MUX_NTO1:ALU_SEL_S1_MUX
+ 51. Parameter Settings for User Entity Instance: BUS_MUX_NTO1:ALU_SEL_S2_MUX
  52. Parameter Settings for User Entity Instance: ALU_32BIT:ALU
  53. Parameter Settings for User Entity Instance: ALU_32BIT:ALU|ADD_SUB_32BIT:ADD_SUB_32BIT_inst
  54. Parameter Settings for User Entity Instance: ALU_32BIT:ALU|ADD_SUB_32BIT:ADD_SUB_32BIT_inst|ONES_COMP_32BIT:ones_comp0
@@ -400,8 +400,8 @@ https://fpgasoftware.intel.com/eula.
 ;          |xorg2:\G_XOR_32BIT:31:xorg2_inst|                             ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALU_32BIT:ALU|XOR_32BIT:XOR_32BIT_inst|xorg2:\G_XOR_32BIT:31:xorg2_inst                                                           ; xorg2             ; work         ;
 ;          |xorg2:\G_XOR_32BIT:3:xorg2_inst|                              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALU_32BIT:ALU|XOR_32BIT:XOR_32BIT_inst|xorg2:\G_XOR_32BIT:3:xorg2_inst                                                            ; xorg2             ; work         ;
 ;          |xorg2:\G_XOR_32BIT:4:xorg2_inst|                              ; 1 (1)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|ALU_32BIT:ALU|XOR_32BIT:XOR_32BIT_inst|xorg2:\G_XOR_32BIT:4:xorg2_inst                                                            ; xorg2             ; work         ;
-;    |BUS_MUX_NTO1:ALU_SRC_MUX|                                           ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|BUS_MUX_NTO1:ALU_SRC_MUX                                                                                                          ; BUS_MUX_NTO1      ; work         ;
-;    |BUS_MUX_NTO1:ALU_SRC_PC_MUX|                                        ; 676 (676)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|BUS_MUX_NTO1:ALU_SRC_PC_MUX                                                                                                       ; BUS_MUX_NTO1      ; work         ;
+;    |BUS_MUX_NTO1:ALU_SEL_S2_MUX|                                           ; 6 (6)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|BUS_MUX_NTO1:ALU_SEL_S2_MUX                                                                                                          ; BUS_MUX_NTO1      ; work         ;
+;    |BUS_MUX_NTO1:ALU_SEL_S1_MUX|                                        ; 676 (676)           ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|BUS_MUX_NTO1:ALU_SEL_S1_MUX                                                                                                       ; BUS_MUX_NTO1      ; work         ;
 ;    |BUS_MUX_NTO1:REG_SRC_MUX|                                           ; 4880 (4880)         ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|BUS_MUX_NTO1:REG_SRC_MUX                                                                                                          ; BUS_MUX_NTO1      ; work         ;
 ;    |IMM_CTRL:IMM_CTRL_inst|                                             ; 46 (46)             ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|IMM_CTRL:IMM_CTRL_inst                                                                                                            ; IMM_CTRL          ; work         ;
 ;    |PC:PC_inst|                                                         ; 20 (0)              ; 12 (0)                    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |RISCV_Processor|PC:PC_inst                                                                                                                        ; PC                ; work         ;
@@ -1487,8 +1487,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; 6:1                ; 6 bits    ; 24 LEs        ; 24 LEs               ; 0 LEs                  ; No         ; |RISCV_Processor|BUS_MUX_NTO1:REG_SRC_MUX|Mux24                                                                                                               ;
 ; 8:1                ; 31 bits   ; 155 LEs       ; 124 LEs              ; 31 LEs                 ; No         ; |RISCV_Processor|ALU_32BIT:ALU|Mux2                                                                                                                           ;
 ; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |RISCV_Processor|reg_file:REG_FILE_inst|BUS_MUX_NTO1:BUS_MUX1|Mux30                                                                                           ;
-; 33:1               ; 20 bits   ; 440 LEs       ; 420 LEs              ; 20 LEs                 ; No         ; |RISCV_Processor|BUS_MUX_NTO1:ALU_SRC_PC_MUX|o_DATA[23]                                                                                                       ;
-; 33:1               ; 12 bits   ; 264 LEs       ; 252 LEs              ; 12 LEs                 ; No         ; |RISCV_Processor|BUS_MUX_NTO1:ALU_SRC_PC_MUX|o_DATA[1]                                                                                                        ;
+; 33:1               ; 20 bits   ; 440 LEs       ; 420 LEs              ; 20 LEs                 ; No         ; |RISCV_Processor|BUS_MUX_NTO1:ALU_SEL_S1_MUX|o_DATA[23]                                                                                                       ;
+; 33:1               ; 12 bits   ; 264 LEs       ; 252 LEs              ; 12 LEs                 ; No         ; |RISCV_Processor|BUS_MUX_NTO1:ALU_SEL_S1_MUX|o_DATA[1]                                                                                                        ;
 ; 1024:1             ; 32 bits   ; 21824 LEs     ; 21824 LEs            ; 0 LEs                  ; No         ; |RISCV_Processor|mem:IMem|Mux20                                                                                                                               ;
 ; 1024:1             ; 25 bits   ; 17050 LEs     ; 17050 LEs            ; 0 LEs                  ; No         ; |RISCV_Processor|mem:DMem|Mux9                                                                                                                                ;
 ; 1029:1             ; 7 bits    ; 4802 LEs      ; 4802 LEs             ; 0 LEs                  ; No         ; |RISCV_Processor|BUS_MUX_NTO1:REG_SRC_MUX|Mux31                                                                                                               ;
@@ -1909,7 +1909,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BUS_MUX_NTO1:ALU_SRC_PC_MUX ;
+; Parameter Settings for User Entity Instance: BUS_MUX_NTO1:ALU_SEL_S1_MUX ;
 +----------------+-------+-------------------------------------------------+
 ; Parameter Name ; Value ; Type                                            ;
 +----------------+-------+-------------------------------------------------+
@@ -1921,7 +1921,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: BUS_MUX_NTO1:ALU_SRC_MUX ;
+; Parameter Settings for User Entity Instance: BUS_MUX_NTO1:ALU_SEL_S2_MUX ;
 +----------------+-------+----------------------------------------------+
 ; Parameter Name ; Value ; Type                                         ;
 +----------------+-------+----------------------------------------------+
@@ -2437,7 +2437,7 @@ Info (12128): Elaborating entity "dffg" for hierarchy "reg_file:REG_FILE_inst|RE
 Info (12128): Elaborating entity "BUS_MUX_NTO1" for hierarchy "reg_file:REG_FILE_inst|BUS_MUX_NTO1:BUS_MUX0" File: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/reg_file.vhd Line: 90
 Info (12128): Elaborating entity "BUS_MUX_NTO1" for hierarchy "BUS_MUX_NTO1:REG_SRC_MUX" File: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd Line: 400
 Info (12128): Elaborating entity "IMM_CTRL" for hierarchy "IMM_CTRL:IMM_CTRL_inst" File: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd Line: 417
-Info (12128): Elaborating entity "BUS_MUX_NTO1" for hierarchy "BUS_MUX_NTO1:ALU_SRC_PC_MUX" File: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd Line: 424
+Info (12128): Elaborating entity "BUS_MUX_NTO1" for hierarchy "BUS_MUX_NTO1:ALU_SEL_S1_MUX" File: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd Line: 424
 Info (12128): Elaborating entity "ALU_32BIT" for hierarchy "ALU_32BIT:ALU" File: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/TopLevel/RISCV_Processor.vhd Line: 454
 Info (12128): Elaborating entity "ADD_SUB_32BIT" for hierarchy "ALU_32BIT:ALU|ADD_SUB_32BIT:ADD_SUB_32BIT_inst" File: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/alu_32bit.vhd Line: 118
 Info (12128): Elaborating entity "ONES_COMP_32BIT" for hierarchy "ALU_32BIT:ALU|ADD_SUB_32BIT:ADD_SUB_32BIT_inst|ONES_COMP_32BIT:ones_comp0" File: /home/jbiced3/cpre3810/cpre3810-toolflow/proj/src/add_sub_32bit.vhd Line: 47

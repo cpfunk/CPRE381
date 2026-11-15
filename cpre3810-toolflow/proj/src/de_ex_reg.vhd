@@ -137,6 +137,30 @@ begin
         o_DATA => o_DE_EX_SIGS.PC_PLUS_4
     );
 
+    RS1_REG: reg
+     generic map(
+        DATA_WIDTH => 5
+    )
+     port map(
+        i_CLK => i_CLK,
+        i_RST => i_RST,
+        i_WE => i_WE,
+        i_DATA => i_DE_EX_SIGS.RS1,
+        o_DATA => o_DE_EX_SIGS.RS1
+    );
+
+    RS2_REG: reg
+     generic map(
+        DATA_WIDTH => 5
+    )
+     port map(
+        i_CLK => i_CLK,
+        i_RST => i_RST,
+        i_WE => i_WE,
+        i_DATA => i_DE_EX_SIGS.RS2,
+        o_DATA => o_DE_EX_SIGS.RS2
+    );
+
     RD_REG: reg
      generic map(
         DATA_WIDTH => 5

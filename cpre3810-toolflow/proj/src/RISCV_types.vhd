@@ -28,8 +28,8 @@ package RISCV_types is
 
   type CTRL_SIGS is record
     -- Multiplexer selectors
-    ALU_SRC_PC           : std_logic_vector(1 downto 0);                      
-    ALU_SRC              : std_logic_vector(1 downto 0);                      
+    ALU_SEL_S1           : std_logic_vector(1 downto 0);                      
+    ALU_SEL_S2              : std_logic_vector(1 downto 0);                      
     REG_SRC              : std_logic_vector(1 downto 0);   
 
     -- Register file & Data memory enables
@@ -63,7 +63,9 @@ package RISCV_types is
     REG_DATA_OUT  : STD_LOGIC_VECTOR_ARRAY(1 downto 0)(31 downto 0);
     PC            : STD_LOGIC_VECTOR(31 downto 0);
     PC_PLUS_4     : STD_LOGIC_VECTOR(31 downto 0);
-    RD            : STD_LOGIC_VECTOR(4 downto 0); 
+    RS1           : STD_LOGIC_VECTOR(4 downto 0);
+    RS2           : STD_LOGIC_VECTOR(4 downto 0);
+    RD            : STD_LOGIC_VECTOR(4 downto 0);
     IMM           : STD_LOGIC_VECTOR(31 downto 0);
   end record;
 

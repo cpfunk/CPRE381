@@ -52,13 +52,13 @@ begin
  -- ALU OPERAND SOURCE MUX
   -- "01" = PC (AUIPC only) 
   -- "00" = rs1 
-  o_CTRL_SIGS.ALU_SRC_PC <= "01" when (i_opcode = OP_AUIPC) 
+  o_CTRL_SIGS.ALU_SEL_S1 <= "01" when (i_opcode = OP_AUIPC) 
                             else "00";
 
   -- "00" = rs2 (R-type, Branch)
   -- "01" = Immediate (all others)
   with i_opcode select
-    o_CTRL_SIGS.ALU_SRC <=  "00" when OP_R_TYPE | OP_BRANCH,
+    o_CTRL_SIGS.ALU_SEL_S2 <=  "00" when OP_R_TYPE | OP_BRANCH,
                             "01" when others;
 
 

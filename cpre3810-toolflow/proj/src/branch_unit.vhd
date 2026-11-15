@@ -11,6 +11,7 @@ entity BRANCH_UNIT is
         i_LTU        : in  std_logic;
         i_EQ         : in  std_logic;
         o_J_REG      : out std_logic;
+        o_TAKEN      : out std_logic;
         o_PC_ADD_IMM : out std_logic
     );
 end entity;
@@ -53,5 +54,8 @@ begin
                     i_LTU when (i_opcode = OP_BRANCH and i_funct3 = "110") else
                     s_GEU when (i_opcode = OP_BRANCH and i_funct3 = "111") else
                     '0';
+    
+    -- SIGNAL TO INDICATE TO THE CONTROL HAZARD UNIT THAT THE BRANCH WAS TAKEN
+    o_TAKEN <= o_J_REG or o_PC_ADD_IMM;
 
 end architecture;

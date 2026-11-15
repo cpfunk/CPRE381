@@ -30,8 +30,8 @@ architecture mixed of tb_control_unit is
 	 	 i_LTU                  : in  std_logic;
 		 i_EQ                   : in  std_logic;
 
-		 o_ALU_SRC_PC           : out std_logic;                      
-		 o_ALU_SRC              : out std_logic;                      
+		 o_ALU_SEL_S1           : out std_logic;                      
+		 o_ALU_SEL_S2              : out std_logic;                      
 		 o_REG_SRC              : out std_logic_vector(1 downto 0);   
 		 o_J_REG                : out std_logic;                      
 
@@ -61,8 +61,8 @@ architecture mixed of tb_control_unit is
   signal s_LTU                  : std_logic := '0';
   signal s_EQ                   : std_logic := '0';
 
-  signal s_ALU_SRC_PC           : std_logic;
-  signal s_ALU_SRC              : std_logic;
+  signal s_ALU_SEL_S1           : std_logic;
+  signal s_ALU_SEL_S2              : std_logic;
   signal s_REG_SRC              : std_logic_vector(1 downto 0);
   signal s_J_REG                : std_logic;
   signal s_PC_ADD_IMM           : std_logic;
@@ -88,8 +88,8 @@ begin
       i_LTU                     => s_LTU,
       i_EQ                      => s_EQ,
 
-      o_ALU_SRC_PC              => s_ALU_SRC_PC,
-      o_ALU_SRC                 => s_ALU_SRC,
+      o_ALU_SEL_S1              => s_ALU_SEL_S1,
+      o_ALU_SEL_S2                 => s_ALU_SEL_S2,
       o_REG_SRC                 => s_REG_SRC,
       o_J_REG                   => s_J_REG,
 
@@ -132,7 +132,7 @@ begin
     s_LT      <= '0';
     s_LTU     <= '0';
     -- Expected Outputs:
-    -- o_ALU_SRC_PC = '0', o_ALU_SRC = '0' 
+    -- o_ALU_SEL_S1 = '0', o_ALU_SEL_S2 = '0' 
     -- o_REG_SRC    = "00" 
     -- o_REG_WE     = '1'
     -- o_IMM_TYPE   = "000"
@@ -144,7 +144,7 @@ begin
     s_funct3  <= "000";
     s_funct7  <= "0100000";
     -- Expected Outputs:
-    -- o_ALU_SRC_PC = '0', o_ALU_SRC = '0'
+    -- o_ALU_SEL_S1 = '0', o_ALU_SEL_S2 = '0'
     -- o_REG_WE     = '1'
     -- o_ALU_CTRL   = "1000" 
     wait for cCLK_PER;
@@ -154,7 +154,7 @@ begin
     s_funct3  <= "000";
     s_funct7  <= "0100000"; 
     -- Expected Outputs:
-    -- o_ALU_SRC    = '1'  
+    -- o_ALU_SEL_S2    = '1'  
     -- o_REG_WE     = '1'
     -- o_IMM_TYPE   = "000" 
     -- o_ALU_CTRL   = "0000" 
@@ -165,7 +165,7 @@ begin
     s_funct3  <= "101";
     s_funct7  <= "0100000"; 
     -- Expected Outputs:
-    -- o_ALU_SRC    = '1'  
+    -- o_ALU_SEL_S2    = '1'  
     -- o_REG_WE     = '1'
     -- o_IMM_TYPE   = "000" 
     -- o_ALU_CTRL   = "1101" 
@@ -176,7 +176,7 @@ begin
     s_funct3  <= "010";     
     s_funct7  <= "0000000";
     -- Expected Outputs:
-    -- o_ALU_SRC    = '1'  
+    -- o_ALU_SEL_S2    = '1'  
     -- o_REG_SRC    = "01" 
     -- o_REG_WE     = '1'
     -- o_WRD        = '1', o_HWRD = '0', o_UNSIGNED = '0'
@@ -200,7 +200,7 @@ begin
     s_funct3  <= "010";     
     s_funct7  <= "0000000";
     -- Expected Outputs:
-    -- o_ALU_SRC    = '1'
+    -- o_ALU_SEL_S2    = '1'
     -- o_REG_WE     = '0'  
     -- o_MEM_WRITE  = '1'  
     -- o_WRD        = '1', o_HWRD = '0'
@@ -225,7 +225,7 @@ begin
     s_funct7  <= "0000000";
     s_EQ      <= '1';      
     -- Expected Outputs:
-    -- o_ALU_SRC    = '0'  
+    -- o_ALU_SEL_S2    = '0'  
     -- o_PC_ADD_IMM = '1'  
     -- o_REG_WE     = '0', o_MEM_WRITE = '0'
     -- o_IMM_TYPE   = "011" 
@@ -270,7 +270,7 @@ begin
     -- o_PC_ADD_IMM = '0'
     -- o_REG_SRC    = "10" 
     -- o_REG_WE     = '1'
-    -- o_ALU_SRC    = '1'  
+    -- o_ALU_SEL_S2    = '1'  
     -- o_IMM_TYPE   = "000" 
     wait for cCLK_PER;
 
@@ -289,8 +289,8 @@ begin
     s_funct3  <= "000";
     s_funct7  <= "0000000";
     -- Expected Outputs:
-    -- o_ALU_SRC_PC = '1'  
-    -- o_ALU_SRC    = '1'  
+    -- o_ALU_SEL_S1 = '1'  
+    -- o_ALU_SEL_S2    = '1'  
     -- o_REG_SRC    = "00" 
     -- o_REG_WE     = '1'
     -- o_IMM_TYPE   = "010" 
