@@ -23,7 +23,7 @@ architecture rtl of reg_file is
 
     signal s_WE : STD_LOGIC_VECTOR(NUM_REGS - 1 downto 0);
     signal s_DATA : STD_LOGIC_VECTOR_ARRAY(NUM_REGS-1 downto 0)(DATA_WIDTH-1 downto 0);
-    
+    signal s_BYPASS_DATA : STD_LOGIC_VECTOR_ARRAY(NUM_REGS-1 downto 0)(DATA_WIDTH-1 downto 0);
 
     component BUS_MUX_NTO1 is
     generic(
@@ -87,13 +87,31 @@ begin
         o_DATA => s_DATA
     );
 
+    s_BYPASS_DATA(0) <= s_DATA(0);
+    g_reg_bypass: for i in 1 to NUM_REGS-1 generate
+        BYPASS_MUX_i: BUS_MUX_NTO1
+         generic map(
+            DATA_WIDTH => DATA_WIDTH,
+            LOG2_N => 1,
+            N => 2
+        )
+         port map(
+            i_S => (0 => s_WE(i)),
+            i_DATA => (
+                0 => s_DATA(i),
+                1 => i_DATA
+            ),
+            o_DATA => s_BYPASS_DATA(i)
+        );
+    end generate g_reg_bypass;
+
     BUS_MUX0: BUS_MUX_NTO1
      generic map(
         N => DATA_WIDTH
     )
      port map(
         i_S => i_RS(0),
-        i_DATA => s_DATA,
+        i_DATA => s_BYPASS_DATA,
         o_DATA => o_DATA(0)
     );
 
@@ -105,7 +123,7 @@ begin
     )
      port map(
         i_S => i_RS(1),
-        i_DATA => s_DATA,
+        i_DATA => s_BYPASS_DATA,
         o_DATA => o_DATA(1)
     );
 

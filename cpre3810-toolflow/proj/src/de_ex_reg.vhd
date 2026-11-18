@@ -17,6 +17,9 @@ entity DE_EX_REG is
         i_RST           : in STD_LOGIC;
         i_WE            : in STD_LOGIC;
         i_FLUSH         : in STD_LOGIC;
+        i_WB_DATA       : in STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0); 
+        i_CAPTURE_RS1   : in STD_LOGIC;                               
+        i_CAPTURE_RS2   : in STD_LOGIC;
         i_DE_EX_SIGS    : in DE_EX_SIGS;
         o_DE_EX_SIGS    : out DE_EX_SIGS
     );
@@ -48,11 +51,21 @@ architecture rtl of DE_EX_REG is
 
     signal s_OPCODE : STD_LOGIC_VECTOR(6 downto 0);
     signal s_FUNCT3 : STD_LOGIC_VECTOR(2 downto 0);
+    signal s_REG_DATA1_IN : STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
+    signal s_REG_DATA2_IN : STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0);
 
 begin
 
     s_OPCODE <= 7x"0" when i_FLUSH = '1' else i_DE_EX_SIGS.OPCODE;
     s_FUNCT3 <= 3x"0" when i_FLUSH = '1' else i_DE_EX_SIGS.FUNCT3;
+    
+    with i_CAPTURE_RS1 select
+        s_REG_DATA1_IN <= i_WB_DATA                    when '1',
+                          i_DE_EX_SIGS.REG_DATA_OUT(0) when others;
+
+    with i_CAPTURE_RS2 select
+        s_REG_DATA2_IN <= i_WB_DATA                    when '1',
+                          i_DE_EX_SIGS.REG_DATA_OUT(1) when others;
 
     OPCODE_REG: reg
      generic map(
@@ -108,8 +121,8 @@ begin
      port map(
         i_CLK => i_CLK,
         i_RST => i_RST,
-        i_WE => i_WE,
-        i_DATA => i_DE_EX_SIGS.REG_DATA_OUT(0),
+        i_WE => i_WE or i_CAPTURE_RS1,
+        i_DATA => s_REG_DATA1_IN,
         o_DATA => o_DE_EX_SIGS.REG_DATA_OUT(0)
     );
 
@@ -120,8 +133,8 @@ begin
      port map(
         i_CLK => i_CLK,
         i_RST => i_RST,
-        i_WE => i_WE,
-        i_DATA => i_DE_EX_SIGS.REG_DATA_OUT(1),
+        i_WE => i_WE or i_CAPTURE_RS2,
+        i_DATA => s_REG_DATA2_IN,
         o_DATA => o_DE_EX_SIGS.REG_DATA_OUT(1)
     );
 

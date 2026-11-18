@@ -211,8 +211,10 @@ architecture structure of RISCV_Processor is
             i_RD_WB         : in STD_LOGIC_VECTOR(4 downto 0);
             i_ALU_SEL_S1    : in STD_LOGIC_VECTOR(1 downto 0);
             i_ALU_SEL_S2    : in STD_LOGIC_VECTOR(1 downto 0);
+            i_EX_MEM_WRITE  : in STD_LOGIC;
             o_SEL_S1        : out STD_LOGIC_VECTOR(1 downto 0);
             o_SEL_S2        : out STD_LOGIC_VECTOR(1 downto 0);
+            o_MEM_DATA_SEL  : out STD_LOGIC_VECTOR(1 downto 0);
             o_EX_STALL      : out STD_LOGIC
         );
     end component;
@@ -278,6 +280,9 @@ architecture structure of RISCV_Processor is
         i_RST           : in STD_LOGIC;
         i_WE            : in STD_LOGIC;
         i_FLUSH         : in STD_LOGIC;
+        i_WB_DATA       : in STD_LOGIC_VECTOR(DATA_WIDTH-1 downto 0); 
+        i_CAPTURE_RS1   : in STD_LOGIC;                               
+        i_CAPTURE_RS2   : in STD_LOGIC;
         i_DE_EX_SIGS    : in DE_EX_SIGS;
         o_DE_EX_SIGS    : out DE_EX_SIGS
     );
@@ -355,6 +360,7 @@ architecture structure of RISCV_Processor is
     -- for forwarding unit
       signal s_SEL_S1       : STD_LOGIC_VECTOR(1 downto 0);
       signal s_SEL_S2       : STD_LOGIC_VECTOR(1 downto 0);
+      signal s_MEM_DATA_SEL : STD_LOGIC_VECTOR(1 downto 0);
       signal s_EX_STALL     : STD_LOGIC;
 
 begin
@@ -382,7 +388,7 @@ begin
    port map(
       i_CLK => iCLK,
       i_RST => iRST,
-      i_HALT => s_HALT and (not s_EX_STALL),
+      i_HALT => s_HALT or s_EX_STALL,
       i_NEXT => s_PC_ADD_IMM_MUX_OUT,
       o_PC => s_IF_DE_IN.PC
   );
@@ -537,6 +543,9 @@ begin
       i_RST => iRST,
       i_WE => s_N_HALT and (not s_EX_STALL),
       i_FLUSH => s_BUBBLE,
+      i_WB_DATA => s_REG_IN_DATA,
+      i_CAPTURE_RS1 => s_EX_STALL and (s_SEL_S1(1) and s_SEL_S1(0)),
+      i_CAPTURE_RS2 => s_EX_STALL and ((s_SEL_S2(1) and s_SEL_S2(0)) or (s_MEM_DATA_SEL(1) and s_MEM_DATA_SEL(0))),
       i_DE_EX_SIGS => s_DE_EX_IN,
       o_DE_EX_SIGS => s_DE_EX_OUT
   );
@@ -582,7 +591,7 @@ begin
       N => 4
   )
    port map(
-      i_S => s_SEL_S2,
+      i_S => s_MEM_DATA_SEL,
       i_DATA => (
         0 => s_DE_EX_OUT.REG_DATA_OUT(1),
         1 => s_DE_EX_OUT.REG_DATA_OUT(1),
@@ -618,8 +627,10 @@ begin
       i_RD_WB => s_MEM_WB_OUT.RD,
       i_ALU_SEL_S1 => s_DE_EX_OUT.CTRL_SIGS.ALU_SEL_S1,
       i_ALU_SEL_S2 => s_DE_EX_OUT.CTRL_SIGS.ALU_SEL_S2,
+      i_EX_MEM_WRITE => s_DE_EX_OUT.CTRL_SIGS.MEM_WRITE,
       o_SEL_S1 => s_SEL_S1,
       o_SEL_S2 => s_SEL_S2,
+      o_MEM_DATA_SEL => s_MEM_DATA_SEL,
       o_EX_STALL => s_EX_STALL
   );
 
@@ -637,7 +648,7 @@ begin
 
   CTRL_HAZARD_UNIT_inst: CTRL_HAZARD_UNIT
    port map(
-      i_TAKEN => s_TAKEN,
+      i_TAKEN => s_TAKEN and (not s_EX_STALL),
       o_BUBBLE => s_BUBBLE
   );
 
