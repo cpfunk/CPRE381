@@ -64,7 +64,7 @@ main:
     lui   tp, 0x10010          # tp = base address of mem_buf (0x10010000)
     addi  t5, x0, -128         # t5 = 0xFFFFFF80 (negative byte 0x80)
     lui   t6, 0xFFFFF          # t6 = 0xFFFFF000
-    nop
+    
 
     sw    t0, 0(tp)            # mem_buf[0] = 0x12345678
     sb    t5, 4(tp)            # mem_buf[1] byte 0 = 0x80
@@ -74,7 +74,7 @@ main:
     lb    s1, 0(tp)            # s1 = sext(0x78) = 0x00000078
     lbu   s2, 1(tp)            # s2 = zext(0x56) = 0x00000056
     lb    s3, 2(tp)            # s3 = sext(0x34) = 0x00000034
-    # Rearr placed sh t6 after 3 loads so t6 is ready without extra NOPs
+    # Rearr placed sh t6 after 3 loads so t6 is ready without extra s
     sh    t6, 6(tp)            # mem_buf[1] upper halfword (offset 6) = 0xEF00
     lbu   s4, 3(tp)            # s4 = zext(0x12) = 0x00000012
     lb    s5, 4(tp)            # s5 = sext(0x80) = 0xFFFFFF80 (-128)
@@ -84,13 +84,13 @@ main:
     lhu   s8, 6(tp)            # s8 = zext(0xEF00) = 0x0000EF00 (61184)
 
     lw    s9, 4(tp)            # s9 = 0xEF000080
-    nop
-    nop
-    nop
+    
+    
+    
     add   s10, s0, s9          # s10 = 0x12345678 + 0xEF000080 = 0x013456F8
-    nop
-    nop
-    nop
+    
+    
+    
     sw    s10, 8(tp)           # mem_buf[2] = 0x013456F8
 
     wfi

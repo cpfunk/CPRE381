@@ -1,5 +1,5 @@
 QuestaSim-64 vcom 2026.2 Compiler 2026.05 May 18 2026
-Start time: 14:15:44 on Nov 18,2026
+Start time: 14:50:44 on Nov 18,2026
 vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd internal/testpy/tb.vhd proj/src/adder_32bit.vhd proj/src/subword_read.vhd proj/src/ctrl_sigs_reg.vhd proj/src/andg2.vhd proj/src/xor_32bit.vhd proj/src/subword_write.vhd proj/src/shift_32bit.vhd proj/src/mem_wb_reg.vhd proj/src/add_sub_32bit.vhd proj/src/control_unit.vhd proj/src/alu_32bit.vhd proj/src/ex_mem_reg.vhd proj/src/branch_unit.vhd proj/src/fwd_unit.vhd proj/src/mux2t1.vhd proj/src/if_de_reg.vhd proj/src/dmem_system.vhd proj/src/dffg.vhd proj/src/reg_file.vhd proj/src/data_hazard_unit.vhd proj/src/org2.vhd proj/src/ctrl_hazard_unit.vhd proj/src/ones_comp_nbit.vhd proj/src/std_logic_vector_array.vhd proj/src/or_32bit.vhd proj/src/flip_32bit.vhd proj/src/reg.vhd proj/src/invg.vhd proj/src/bus_mux_Nto1.vhd proj/src/adder_1bit.vhd proj/src/pc.vhd proj/src/dffg_rst_hi.vhd proj/src/imm_ctrl.vhd proj/src/de_ex_reg.vhd proj/src/shift_right_fixed.vhd proj/src/and_32bit.vhd proj/src/xorg2.vhd proj/src/mux2t1_N.vhd proj/src/decoder_1toN.vhd proj/src/RISCV_types.vhd proj/src/regs.vhd proj/src/TopLevel/RISCV_Processor.vhd proj/src/TopLevel/mem.vhd 
 -- Loading package STANDARD
 -- Loading package TEXTIO
@@ -109,5 +109,5 @@ vcom -2008 -work internal/ModelSimContainer/work proj/src/RISCV_types.vhd intern
 -- Compiling architecture structure of RISCV_Processor
 -- Compiling entity mem
 -- Compiling architecture rtl of mem
-vcom: End time: 14:15:45 on Nov 18,2026, Elapsed time: 0:00:01
+vcom: End time: 14:50:45 on Nov 18,2026, Elapsed time: 0:00:01
 Errors: 0, Warnings: 4
